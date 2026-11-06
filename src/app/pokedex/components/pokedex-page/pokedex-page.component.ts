@@ -1,4 +1,9 @@
 import {
+  CdkFixedSizeVirtualScroll,
+  CdkVirtualForOf,
+  CdkVirtualScrollViewport,
+} from '@angular/cdk/scrolling';
+import {
   ChangeDetectionStrategy,
   Component,
   OnInit,
@@ -37,6 +42,9 @@ interface StatColumn {
     TypeBadgeComponent,
     PokemonDetailPanelComponent,
     TypeHighlightDirective,
+    CdkVirtualScrollViewport,
+    CdkFixedSizeVirtualScroll,
+    CdkVirtualForOf,
   ],
   templateUrl: './pokedex-page.component.html',
   styleUrl: './pokedex-page.component.scss',
@@ -76,11 +84,17 @@ export class PokedexPageComponent implements OnInit {
     initialValue: PAGE_SIZE_OPTIONS[0],
   });
 
+  protected readonly filteredSortedState = toSignal(this.selectors.filteredSortedState$, {
+    initialValue: loadingState<Pokemon[]>(),
+  });
+
   // Local UI state.
   protected readonly selectedPokemon = signal<Pokemon | null>(null);
   protected readonly highlightType = signal<string | null>(null);
+  protected readonly viewMode = signal<'paginated' | 'virtual'>('paginated');
 
   protected readonly rows = computed(() => this.tableState().data ?? []);
+  protected readonly virtualRows = computed(() => this.filteredSortedState().data ?? []);
   protected readonly pageCount = computed(() =>
     Math.max(1, Math.ceil(this.filteredCount() / this.pageSize())),
   );
@@ -103,6 +117,10 @@ export class PokedexPageComponent implements OnInit {
 
   protected onHighlightChange(value: string): void {
     this.highlightType.set(value || null);
+  }
+
+  protected setViewMode(mode: 'paginated' | 'virtual'): void {
+    this.viewMode.set(mode);
   }
 
   /** Toggle sort on a column: first click ascending, second descending. */

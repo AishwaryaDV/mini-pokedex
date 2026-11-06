@@ -46,6 +46,86 @@
     text-transform: capitalize;
     cursor: pointer;
   }
+
+  &__view {
+    display: inline-flex;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  &__view-btn {
+    padding: var(--space-2) var(--space-3);
+    border: none;
+    background: var(--color-surface-2);
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    &--active {
+      background: var(--color-primary);
+      color: #fff;
+    }
+  }
+}
+
+.pokedex-virtual {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 56px minmax(120px, 1.4fr) minmax(100px, 1.2fr) repeat(
+        7,
+        minmax(44px, 0.7fr)
+      );
+    align-items: center;
+    min-height: 64px;
+    padding: 0 var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__header {
+    min-height: 44px;
+    background: var(--color-surface-2);
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  &__viewport {
+    height: 560px;
+    @include shared.custom-scrollbar;
+  }
+
+  .pokedex-virtual__viewport &__row {
+    cursor: pointer;
+    transition: background 0.12s ease;
+
+    &:hover {
+      background: var(--color-surface-2);
+    }
+
+    &--active {
+      background: rgba(0, 122, 204, 0.16);
+    }
+  }
+
+  &__cell {
+    padding: var(--space-2);
+    font-size: 0.85rem;
+  }
+
+  &__name {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  &__num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
 }
 
 .pokedex-skeleton {

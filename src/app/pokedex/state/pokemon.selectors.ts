@@ -78,6 +78,20 @@ export class PokemonSelectors {
     shareReplay(1),
   );
 
+  /**
+   * Async state carrying the full filtered + sorted list (no pagination) — used
+   * by the virtual-scroll view mode.
+   */
+  readonly filteredSortedState$: Observable<AsyncState<Pokemon[]>> = combineLatest([
+    this.store.pokemonState$,
+    this.sorted$,
+  ]).pipe(
+    map(([loadState, sorted]) =>
+      loadState.status === 'success' ? successState(sorted) : loadState,
+    ),
+    shareReplay(1),
+  );
+
   /** Number of rows after filtering — the denominator for pagination. */
   readonly filteredCount$: Observable<number> = this.sorted$.pipe(
     map((list) => list.length),

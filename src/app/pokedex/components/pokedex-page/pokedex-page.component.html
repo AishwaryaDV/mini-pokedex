@@ -48,98 +48,206 @@
       <option [value]="type">vs {{ type }}</option>
     }
   </select>
+  <div class="toolbar__view" role="group" aria-label="View mode">
+    <button
+      type="button"
+      class="toolbar__view-btn"
+      [class.toolbar__view-btn--active]="viewMode() === 'paginated'"
+      [attr.aria-pressed]="viewMode() === 'paginated'"
+      (click)="setViewMode('paginated')"
+    >
+      Pages
+    </button>
+    <button
+      type="button"
+      class="toolbar__view-btn"
+      [class.toolbar__view-btn--active]="viewMode() === 'virtual'"
+      [attr.aria-pressed]="viewMode() === 'virtual'"
+      (click)="setViewMode('virtual')"
+    >
+      Virtual
+    </button>
+  </div>
 </div>
 
-<app-async-state
-  [state]="tableState()"
-  (retry)="reload()"
-  loadingLabel="Loading Pokémon…"
-  emptyMessage="No Pokémon match your filters."
->
-  <div asyncLoading class="pokedex-skeleton">
-    @for (row of skeletonRows; track $index) {
-      <app-skeleton height="44px" />
-    }
-  </div>
+@if (viewMode() === 'paginated') {
+  <app-async-state
+    [state]="tableState()"
+    (retry)="reload()"
+    loadingLabel="Loading Pokémon…"
+    emptyMessage="No Pokémon match your filters."
+  >
+    <div asyncLoading class="pokedex-skeleton">
+      @for (row of skeletonRows; track $index) {
+        <app-skeleton height="44px" />
+      }
+    </div>
 
-  <div class="pokedex-table-wrapper">
-    <table class="pokedex-table">
-      <thead>
-        <tr>
-          <th scope="col">Sprite</th>
-          <th scope="col">
-            <button type="button" class="pokedex-table__sort" (click)="toggleSort('name')">
-              Name <span class="pokedex-table__sort-icon">{{ sortIcon('name') }}</span>
-            </button>
-          </th>
-          <th scope="col">Types</th>
-          @for (col of statColumns; track col.key) {
-            <th scope="col" class="pokedex-table__num">
-              <button type="button" class="pokedex-table__sort" (click)="toggleSort(col.key)">
-                {{ col.label }}
-                <span class="pokedex-table__sort-icon">{{ sortIcon(col.key) }}</span>
+    <div class="pokedex-table-wrapper">
+      <table class="pokedex-table">
+        <thead>
+          <tr>
+            <th scope="col">Sprite</th>
+            <th scope="col">
+              <button type="button" class="pokedex-table__sort" (click)="toggleSort('name')">
+                Name <span class="pokedex-table__sort-icon">{{ sortIcon('name') }}</span>
               </button>
             </th>
-          }
-        </tr>
-      </thead>
-      <tbody>
-        @for (pokemon of rows(); track pokemon.id) {
-          <tr
-            class="pokedex-table__row"
-            [class.pokedex-table__row--active]="selectedPokemon()?.id === pokemon.id"
-            [appTypeHighlight]="highlightType()"
-            [appTypeHighlightTypes]="pokemon.types"
-            (click)="selectPokemon(pokemon)"
-          >
-            <td>
-              @if (pokemon.sprite) {
-                <img
-                  class="pokedex-table__sprite"
-                  [src]="pokemon.sprite"
-                  [alt]="pokemon.name"
-                  width="48"
-                  height="48"
-                  loading="lazy"
-                />
-              } @else {
-                <span class="pokedex-table__sprite pokedex-table__sprite--empty" aria-hidden="true"
-                  >?</span
-                >
-              }
-            </td>
-            <td class="pokedex-table__name">
-              <span class="pokedex-table__id">#{{ pokemon.id }}</span> {{ pokemon.name }}
-            </td>
-            <td>
-              <span class="pokedex-table__types">
-                @for (type of pokemon.types; track type) {
-                  <app-type-badge [type]="type" />
-                }
-              </span>
-            </td>
+            <th scope="col">Types</th>
             @for (col of statColumns; track col.key) {
-              <td
-                class="pokedex-table__num"
-                [class.pokedex-table__num--total]="col.key === 'total'"
-              >
-                {{ statValue(pokemon, col.key) }}
-              </td>
+              <th scope="col" class="pokedex-table__num">
+                <button type="button" class="pokedex-table__sort" (click)="toggleSort(col.key)">
+                  {{ col.label }}
+                  <span class="pokedex-table__sort-icon">{{ sortIcon(col.key) }}</span>
+                </button>
+              </th>
             }
           </tr>
-        }
-      </tbody>
-    </table>
-  </div>
-
-  <div class="pagination">
-    <span class="pagination__info">{{ filteredCount() }} Pokémon</span>
-    <div class="pagination__controls">
-      <button type="button" (click)="prevPage()" [disabled]="page() <= 1">Prev</button>
-      <span class="pagination__page">Page {{ page() }} of {{ pageCount() }}</span>
-      <button type="button" (click)="nextPage()" [disabled]="page() >= pageCount()">Next</button>
+        </thead>
+        <tbody>
+          @for (pokemon of rows(); track pokemon.id) {
+            <tr
+              class="pokedex-table__row"
+              [class.pokedex-table__row--active]="selectedPokemon()?.id === pokemon.id"
+              [appTypeHighlight]="highlightType()"
+              [appTypeHighlightTypes]="pokemon.types"
+              (click)="selectPokemon(pokemon)"
+            >
+              <td>
+                @if (pokemon.sprite) {
+                  <img
+                    class="pokedex-table__sprite"
+                    [src]="pokemon.sprite"
+                    [alt]="pokemon.name"
+                    width="48"
+                    height="48"
+                    loading="lazy"
+                  />
+                } @else {
+                  <span
+                    class="pokedex-table__sprite pokedex-table__sprite--empty"
+                    aria-hidden="true"
+                    >?</span
+                  >
+                }
+              </td>
+              <td class="pokedex-table__name">
+                <span class="pokedex-table__id">#{{ pokemon.id }}</span> {{ pokemon.name }}
+              </td>
+              <td>
+                <span class="pokedex-table__types">
+                  @for (type of pokemon.types; track type) {
+                    <app-type-badge [type]="type" />
+                  }
+                </span>
+              </td>
+              @for (col of statColumns; track col.key) {
+                <td
+                  class="pokedex-table__num"
+                  [class.pokedex-table__num--total]="col.key === 'total'"
+                >
+                  {{ statValue(pokemon, col.key) }}
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
     </div>
-  </div>
-</app-async-state>
+
+    <div class="pagination">
+      <span class="pagination__info">{{ filteredCount() }} Pokémon</span>
+      <div class="pagination__controls">
+        <button type="button" (click)="prevPage()" [disabled]="page() <= 1">Prev</button>
+        <span class="pagination__page">Page {{ page() }} of {{ pageCount() }}</span>
+        <button type="button" (click)="nextPage()" [disabled]="page() >= pageCount()">Next</button>
+      </div>
+    </div>
+  </app-async-state>
+} @else {
+  <app-async-state
+    [state]="filteredSortedState()"
+    (retry)="reload()"
+    loadingLabel="Loading Pokémon…"
+    emptyMessage="No Pokémon match your filters."
+  >
+    <div asyncLoading class="pokedex-skeleton">
+      @for (row of skeletonRows; track $index) {
+        <app-skeleton height="44px" />
+      }
+    </div>
+
+    <div class="pokedex-virtual">
+      <div class="pokedex-virtual__row pokedex-virtual__header">
+        <span class="pokedex-virtual__cell">Sprite</span>
+        <span class="pokedex-virtual__cell">
+          <button type="button" class="pokedex-table__sort" (click)="toggleSort('name')">
+            Name <span class="pokedex-table__sort-icon">{{ sortIcon('name') }}</span>
+          </button>
+        </span>
+        <span class="pokedex-virtual__cell">Types</span>
+        @for (col of statColumns; track col.key) {
+          <span class="pokedex-virtual__cell pokedex-virtual__num">
+            <button type="button" class="pokedex-table__sort" (click)="toggleSort(col.key)">
+              {{ col.label }} <span class="pokedex-table__sort-icon">{{ sortIcon(col.key) }}</span>
+            </button>
+          </span>
+        }
+      </div>
+
+      <cdk-virtual-scroll-viewport itemSize="64" class="pokedex-virtual__viewport">
+        <div
+          *cdkVirtualFor="let pokemon of virtualRows()"
+          class="pokedex-virtual__row"
+          role="button"
+          tabindex="0"
+          [class.pokedex-virtual__row--active]="selectedPokemon()?.id === pokemon.id"
+          [appTypeHighlight]="highlightType()"
+          [appTypeHighlightTypes]="pokemon.types"
+          (click)="selectPokemon(pokemon)"
+          (keydown.enter)="selectPokemon(pokemon)"
+          (keydown.space)="selectPokemon(pokemon)"
+        >
+          <span class="pokedex-virtual__cell">
+            @if (pokemon.sprite) {
+              <img
+                class="pokedex-table__sprite"
+                [src]="pokemon.sprite"
+                [alt]="pokemon.name"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            } @else {
+              <span class="pokedex-table__sprite pokedex-table__sprite--empty" aria-hidden="true"
+                >?</span
+              >
+            }
+          </span>
+          <span class="pokedex-virtual__cell pokedex-virtual__name">
+            <span class="pokedex-table__id">#{{ pokemon.id }}</span> {{ pokemon.name }}
+          </span>
+          <span class="pokedex-virtual__cell">
+            <span class="pokedex-table__types">
+              @for (type of pokemon.types; track type) {
+                <app-type-badge [type]="type" />
+              }
+            </span>
+          </span>
+          @for (col of statColumns; track col.key) {
+            <span
+              class="pokedex-virtual__cell pokedex-virtual__num"
+              [class.pokedex-table__num--total]="col.key === 'total'"
+            >
+              {{ statValue(pokemon, col.key) }}
+            </span>
+          }
+        </div>
+      </cdk-virtual-scroll-viewport>
+
+      <span class="pagination__info">{{ filteredCount() }} Pokémon</span>
+    </div>
+  </app-async-state>
+}
 
 <app-pokemon-detail-panel [pokemon]="selectedPokemon()" (closed)="closePanel()" />
