@@ -2,3 +2,128 @@
   <h1 class="page-header__title">Pokédex</h1>
   <p class="page-header__subtitle">Browse Pokémon, sort by stats, and inspect details.</p>
 </header>
+
+<div class="toolbar">
+  <input
+    #searchInput
+    class="toolbar__search"
+    type="search"
+    placeholder="Search by name"
+    aria-label="Search Pokémon by name"
+    [value]="search()"
+    (input)="onSearch(searchInput.value)"
+  />
+  <select
+    #typeSelect
+    class="toolbar__select"
+    aria-label="Filter by type"
+    [value]="typeFilter() ?? ''"
+    (change)="onTypeChange(typeSelect.value)"
+  >
+    <option value="">All types</option>
+    @for (type of availableTypes(); track type) {
+      <option [value]="type">{{ type }}</option>
+    }
+  </select>
+  <select
+    #sizeSelect
+    class="toolbar__select"
+    aria-label="Rows per page"
+    [value]="pageSize()"
+    (change)="onPageSizeChange(sizeSelect.value)"
+  >
+    @for (size of pageSizeOptions; track size) {
+      <option [value]="size">{{ size }} / page</option>
+    }
+  </select>
+</div>
+
+<app-async-state
+  [state]="tableState()"
+  (retry)="reload()"
+  loadingLabel="Loading Pokémon…"
+  emptyMessage="No Pokémon match your filters."
+>
+  <div asyncLoading class="pokedex-skeleton">
+    @for (row of skeletonRows; track $index) {
+      <app-skeleton height="44px" />
+    }
+  </div>
+
+  <div class="pokedex-table-wrapper">
+    <table class="pokedex-table">
+      <thead>
+        <tr>
+          <th scope="col">Sprite</th>
+          <th scope="col">
+            <button type="button" class="pokedex-table__sort" (click)="toggleSort('name')">
+              Name <span class="pokedex-table__sort-icon">{{ sortIcon('name') }}</span>
+            </button>
+          </th>
+          <th scope="col">Types</th>
+          @for (col of statColumns; track col.key) {
+            <th scope="col" class="pokedex-table__num">
+              <button type="button" class="pokedex-table__sort" (click)="toggleSort(col.key)">
+                {{ col.label }}
+                <span class="pokedex-table__sort-icon">{{ sortIcon(col.key) }}</span>
+              </button>
+            </th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for (pokemon of rows(); track pokemon.id) {
+          <tr
+            class="pokedex-table__row"
+            [class.pokedex-table__row--active]="selectedPokemon()?.id === pokemon.id"
+            (click)="selectPokemon(pokemon)"
+          >
+            <td>
+              @if (pokemon.sprite) {
+                <img
+                  class="pokedex-table__sprite"
+                  [src]="pokemon.sprite"
+                  [alt]="pokemon.name"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+              } @else {
+                <span class="pokedex-table__sprite pokedex-table__sprite--empty" aria-hidden="true"
+                  >?</span
+                >
+              }
+            </td>
+            <td class="pokedex-table__name">
+              <span class="pokedex-table__id">#{{ pokemon.id }}</span> {{ pokemon.name }}
+            </td>
+            <td>
+              <span class="pokedex-table__types">
+                @for (type of pokemon.types; track type) {
+                  <app-type-badge [type]="type" />
+                }
+              </span>
+            </td>
+            @for (col of statColumns; track col.key) {
+              <td
+                class="pokedex-table__num"
+                [class.pokedex-table__num--total]="col.key === 'total'"
+              >
+                {{ statValue(pokemon, col.key) }}
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    <span class="pagination__info">{{ filteredCount() }} Pokémon</span>
+    <div class="pagination__controls">
+      <button type="button" (click)="prevPage()" [disabled]="page() <= 1">Prev</button>
+      <span class="pagination__page">Page {{ page() }} of {{ pageCount() }}</span>
+      <button type="button" (click)="nextPage()" [disabled]="page() >= pageCount()">Next</button>
+    </div>
+  </div>
+</app-async-state>
