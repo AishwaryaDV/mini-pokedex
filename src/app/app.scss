@@ -1,0 +1,10 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+    padding: var(--space-5);
+  }
+}

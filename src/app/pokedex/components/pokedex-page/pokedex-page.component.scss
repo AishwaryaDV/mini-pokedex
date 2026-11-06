@@ -1,0 +1,15 @@
+.page-header {
+  margin-bottom: var(--space-5);
+
+  &__title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    margin: var(--space-1) 0 0;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+}

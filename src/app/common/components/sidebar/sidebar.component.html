@@ -1,0 +1,13 @@
+<aside class="sidebar">
+  <div class="sidebar__brand">
+    <span class="sidebar__logo" aria-hidden="true">⚡</span>
+    <span class="sidebar__title">Mini Pokédex</span>
+  </div>
+  <nav class="sidebar__nav" aria-label="Primary">
+    @for (link of links; track link.path) {
+      <a class="sidebar__link" [routerLink]="link.path" routerLinkActive="sidebar__link--active">
+        {{ link.label }}
+      </a>
+    }
+  </nav>
+</aside>
