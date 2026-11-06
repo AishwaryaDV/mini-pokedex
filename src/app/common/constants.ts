@@ -12,8 +12,8 @@ export const SEARCH_DEBOUNCE_MS = 300;
 /** Page-size options offered by the Pokédex table. */
 export const PAGE_SIZE_OPTIONS = [10, 25, 50] as const;
 
-/** Number of Pokémon loaded into the cached store (Generation 1). */
-export const POKEDEX_LIMIT = 151;
+/** Number of Pokémon loaded into the cached store (covers all seed teams). */
+export const POKEDEX_LIMIT = 251;
 
 /** Team size constraints enforced by the team builder. */
 export const TEAM_MIN_SIZE = 1;

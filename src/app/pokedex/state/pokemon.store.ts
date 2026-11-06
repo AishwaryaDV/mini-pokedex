@@ -34,6 +34,9 @@ export class PokemonStore {
   /** Fires an initial load and every retry. */
   private readonly reload$ = new BehaviorSubject<void>(undefined);
 
+  /** Guards against both feature pages re-triggering the initial load. */
+  private hasLoaded = false;
+
   // Core state holders.
   private readonly searchSubject = new BehaviorSubject<string>('');
   private readonly typeFilterSubject = new BehaviorSubject<string | null>(null);
@@ -56,6 +59,12 @@ export class PokemonStore {
     shareReplay(1),
   );
 
+  /** Cached Pokémon indexed by id — the shared lookup both features read. */
+  readonly entitiesById$: Observable<Map<number, Pokemon>> = this.pokemonState$.pipe(
+    map((state) => new Map((state.data ?? []).map((pokemon) => [pokemon.id, pokemon]))),
+    shareReplay(1),
+  );
+
   /** Normalized, debounced search term driving the filtered view. */
   readonly debouncedSearch$: Observable<string> = this.searchSubject.pipe(
     debounceTime(SEARCH_DEBOUNCE_MS),
@@ -75,8 +84,18 @@ export class PokemonStore {
   /** Raw (undebounced) search value, for binding the input's current text. */
   readonly search$ = this.searchSubject.asObservable();
 
-  /** (Re)load the Pokédex from the API. Also used by the error-state Retry. */
+  /** Load the Pokédex once. Safe to call from multiple pages. */
   load(): void {
+    if (this.hasLoaded) {
+      return;
+    }
+    this.hasLoaded = true;
+    this.reload$.next();
+  }
+
+  /** Force a fresh load, e.g. from the error-state Retry. */
+  reload(): void {
+    this.hasLoaded = true;
     this.reload$.next();
   }
 

@@ -140,6 +140,6 @@ export class PokedexPageComponent implements OnInit {
   }
 
   protected reload(): void {
-    this.store.load();
+    this.store.reload();
   }
 }
