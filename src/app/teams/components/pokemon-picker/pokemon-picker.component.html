@@ -1,0 +1,46 @@
+<div class="picker">
+  <div class="picker__input-wrap">
+    <input
+      class="picker__input"
+      type="text"
+      [formControl]="searchControl"
+      [placeholder]="atCapacity() ? 'Maximum of 6 reached' : 'Search Pokémon to add'"
+      [readOnly]="atCapacity()"
+      aria-label="Search Pokémon to add to the team"
+      autocomplete="off"
+    />
+    @if (matches().length) {
+      <ul class="picker__dropdown" role="listbox">
+        @for (pokemon of matches(); track pokemon.id) {
+          <li>
+            <button type="button" class="picker__option" (click)="onAdd(pokemon)">
+              <img
+                class="picker__option-sprite"
+                [src]="spriteFor(pokemon.id)"
+                alt=""
+                aria-hidden="true"
+                width="32"
+                height="32"
+                loading="lazy"
+              />
+              <span class="picker__option-name">{{ pokemon.name }}</span>
+              <span class="picker__option-id">#{{ pokemon.id }}</span>
+            </button>
+          </li>
+        }
+      </ul>
+    }
+  </div>
+
+  @if (selected().length) {
+    <div class="picker__chips">
+      @for (pokemon of selected(); track pokemon.id) {
+        <app-chip
+          [label]="pokemon.name"
+          [imageUrl]="spriteFor(pokemon.id)"
+          (remove)="onRemove(pokemon.id)"
+        />
+      }
+    </div>
+  }
+</div>

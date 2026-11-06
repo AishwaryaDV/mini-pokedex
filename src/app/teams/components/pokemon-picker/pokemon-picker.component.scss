@@ -1,0 +1,86 @@
+@use '../../../common/styles/shared' as shared;
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+
+  &__input-wrap {
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-size: 0.875rem;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 1px;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-height: 260px;
+    overflow-y: auto;
+    margin: 0;
+    padding: var(--space-1);
+    list-style: none;
+    background: var(--color-surface-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    @include shared.custom-scrollbar;
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+    padding: var(--space-2);
+    border: none;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+      background: var(--color-surface-2);
+    }
+  }
+
+  &__option-sprite {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    image-rendering: pixelated;
+  }
+
+  &__option-name {
+    flex: 1;
+    text-transform: capitalize;
+    font-size: 0.85rem;
+  }
+
+  &__option-id {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+}
