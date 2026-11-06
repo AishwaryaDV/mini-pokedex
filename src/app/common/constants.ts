@@ -19,6 +19,13 @@ export const POKEDEX_LIMIT = 251;
 export const TEAM_MIN_SIZE = 1;
 export const TEAM_MAX_SIZE = 6;
 
+/** Trainer that owns teams created in-app (the mock has no trainer switcher). */
+export const DEFAULT_TRAINER_ID = 1;
+
+/** Team name length bounds. */
+export const TEAM_NAME_MIN_LENGTH = 3;
+export const TEAM_NAME_MAX_LENGTH = 30;
+
 /** Resilience settings for PokéAPI calls. */
 export const API_RETRY_COUNT = 2;
 export const API_RETRY_DELAY_MS = 800;

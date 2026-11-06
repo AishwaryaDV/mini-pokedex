@@ -3,6 +3,8 @@
   <p class="page-header__subtitle">View your teams and build a new one.</p>
 </header>
 
+<app-team-builder-form class="teams-page__builder" [options]="pokemonOptions()" />
+
 <app-team-list
   [state]="teamsState()"
   [pokemonById]="pokemonById()"

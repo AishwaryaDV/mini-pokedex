@@ -1,0 +1,57 @@
+<form class="builder" [formGroup]="form" (ngSubmit)="submit()">
+  <h2 class="builder__title">Build a team</h2>
+
+  <div class="form-field">
+    <label class="form-field__label" for="team-name">Team name</label>
+    <input
+      id="team-name"
+      class="form-field__input"
+      type="text"
+      formControlName="name"
+      placeholder="e.g. Kanto Champions"
+      autocomplete="off"
+    />
+    @if (nameControl.touched && nameControl.invalid) {
+      <p class="form-field__error">
+        @if (nameControl.hasError('required')) {
+          Name is required.
+        } @else if (nameControl.hasError('minlength')) {
+          Name must be at least {{ nameMinLength }} characters.
+        } @else if (nameControl.hasError('maxlength')) {
+          Name must be at most {{ nameMaxLength }} characters.
+        } @else if (nameControl.hasError('nameTaken')) {
+          That team name is already taken.
+        }
+      </p>
+    } @else if (nameControl.pending) {
+      <p class="form-field__hint">Checking availability…</p>
+    }
+  </div>
+
+  <div class="form-field">
+    <span class="form-field__label">Pokémon (1–{{ maxSize }})</span>
+    <app-pokemon-picker
+      [options]="options()"
+      [selectedIds]="members()"
+      (add)="addMember($event)"
+      (remove)="removeMember($event)"
+    />
+    @if (membersControl.touched && membersControl.invalid) {
+      <p class="form-field__error">
+        @if (membersControl.hasError('minTeamSize')) {
+          Add at least one Pokémon.
+        } @else if (membersControl.hasError('maxTeamSize')) {
+          A team can have at most {{ maxSize }} Pokémon.
+        }
+      </p>
+    }
+  </div>
+
+  <button
+    type="submit"
+    class="builder__submit"
+    [disabled]="status() === 'INVALID' || status() === 'PENDING'"
+  >
+    Create team
+  </button>
+</form>
