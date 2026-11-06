@@ -1,0 +1,16 @@
+@if (isLoading()) {
+  <ng-content select="[asyncLoading]">
+    <app-spinner [label]="loadingLabel()" />
+  </ng-content>
+} @else if (isError()) {
+  <div class="async-state__error" role="alert">
+    <p class="async-state__error-text">{{ state().error }}</p>
+    <button type="button" class="async-state__retry" (click)="retry.emit()">Retry</button>
+  </div>
+} @else if (isEmpty()) {
+  <ng-content select="[asyncEmpty]">
+    <p class="async-state__empty">{{ emptyMessage() }}</p>
+  </ng-content>
+} @else {
+  <ng-content />
+}
