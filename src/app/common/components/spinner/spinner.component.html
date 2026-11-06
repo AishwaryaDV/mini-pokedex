@@ -1,0 +1,6 @@
+<div class="spinner" role="status" [attr.aria-label]="label() ?? 'Loading'">
+  <span class="spinner__ring" [style.width.px]="size()" [style.height.px]="size()"></span>
+  @if (label()) {
+    <span class="spinner__label">{{ label() }}</span>
+  }
+</div>

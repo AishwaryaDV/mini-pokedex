@@ -1,0 +1,6 @@
+@use '../../styles/shared' as shared;
+
+.skeleton {
+  display: block;
+  @include shared.skeleton-shimmer;
+}
