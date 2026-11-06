@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles & design tokens — referenced by all components via var(--token). */
+
+:root {
+  /* Brand */
+  --color-primary: #007acc;
+  --color-secondary: #6c757d;
+  --color-accent: #ffb414;
+
+  /* Status */
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+
+  /* Surfaces */
+  --color-surface: #131515;
+  --color-surface-2: #1e2121;
+  --color-surface-3: #262a2a;
+  --color-surface-overlay: rgba(19, 21, 21, 0.75);
+
+  /* Text & borders */
+  --color-text: #ffffff;
+  --color-text-muted: #9aa0a0;
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  /* Layout */
+  --panel-width: 393px;
+  --sidebar-width: 232px;
+  --backdrop-blur: blur(16px);
+
+  /* Scale */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #111212;
+}
+
+body {
+  color-scheme: dark;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  margin: 0;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}

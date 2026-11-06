@@ -1,0 +1,58 @@
+// Shared SCSS utilities — import with: @use '...path/shared' as shared;
+
+// Skeleton shimmer: apply to a placeholder block while data loads.
+@mixin skeleton-shimmer {
+  animation: sk-shimmer 1.6s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-size: 200% 100%;
+}
+
+@keyframes sk-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+// Thin, themed scrollbar for scrollable panels.
+@mixin custom-scrollbar($color: rgba(255, 255, 255, 0.2)) {
+  scrollbar-width: thin;
+  scrollbar-color: $color transparent;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color;
+    border-radius: 4px;
+  }
+}
+
+// Staggered entry animation used by lists/cards (micro-animation).
+@mixin fade-in-up($duration: 0.28s) {
+  animation: fade-in-up $duration ease both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
