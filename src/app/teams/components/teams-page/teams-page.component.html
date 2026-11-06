@@ -2,3 +2,10 @@
   <h1 class="page-header__title">Teams</h1>
   <p class="page-header__subtitle">View your teams and build a new one.</p>
 </header>
+
+<app-team-list
+  [state]="teamsState()"
+  [pokemonById]="pokemonById()"
+  (retry)="reloadTeams()"
+  (deleteTeam)="deleteTeam($event)"
+/>

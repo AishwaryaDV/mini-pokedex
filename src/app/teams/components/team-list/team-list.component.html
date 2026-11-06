@@ -1,0 +1,16 @@
+<app-async-state
+  [state]="state()"
+  (retry)="retry.emit()"
+  loadingLabel="Loading teams…"
+  emptyMessage="No teams yet. Build your first team below."
+>
+  <div class="team-list">
+    @for (team of state().data ?? []; track team.id) {
+      <app-team-card
+        [team]="team"
+        [pokemonById]="pokemonById()"
+        (deleteRequested)="deleteTeam.emit($event)"
+      />
+    }
+  </div>
+</app-async-state>

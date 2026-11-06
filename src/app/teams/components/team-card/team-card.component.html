@@ -1,0 +1,41 @@
+<article class="team-card">
+  <header class="team-card__header">
+    <div class="team-card__title">
+      <h3 class="team-card__name">{{ team().name }}</h3>
+      <span class="team-card__date">{{ team().createdAt | date: 'mediumDate' }}</span>
+    </div>
+    <button
+      type="button"
+      class="team-card__delete"
+      (click)="onDelete()"
+      [attr.aria-label]="'Delete ' + team().name"
+    >
+      ×
+    </button>
+  </header>
+
+  <ul class="team-card__members">
+    @for (id of team().pokemonIds; track id) {
+      <li class="team-card__member">
+        <img [src]="spriteFor(id)" [alt]="'Pokémon ' + id" width="48" height="48" loading="lazy" />
+      </li>
+    }
+  </ul>
+
+  <footer class="team-card__footer">
+    <div class="team-card__total">
+      <span class="team-card__total-label">Total base stats</span>
+      <span class="team-card__total-value">{{ totalBaseStats() }}</span>
+    </div>
+    @if (typeDistribution().length) {
+      <div class="team-card__types">
+        @for (entry of typeDistribution(); track entry.type) {
+          <span class="team-card__type">
+            <app-type-badge [type]="entry.type" />
+            <span class="team-card__type-count">×{{ entry.count }}</span>
+          </span>
+        }
+      </div>
+    }
+  </footer>
+</article>
