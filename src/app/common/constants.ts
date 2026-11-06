@@ -22,6 +22,9 @@ export const TEAM_MAX_SIZE = 6;
 /** Trainer that owns teams created in-app (the mock has no trainer switcher). */
 export const DEFAULT_TRAINER_ID = 1;
 
+/** localStorage key for the user's currently selected team. */
+export const SELECTED_TEAM_KEY = 'mini-pokedex.selected-team';
+
 /** Team name length bounds. */
 export const TEAM_NAME_MIN_LENGTH = 3;
 export const TEAM_NAME_MAX_LENGTH = 30;
