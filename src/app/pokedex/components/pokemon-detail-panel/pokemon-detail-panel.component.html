@@ -1,0 +1,98 @@
+<div
+  class="panel-backdrop"
+  [class.panel-backdrop--open]="open()"
+  (click)="onClose()"
+  aria-hidden="true"
+></div>
+
+<aside
+  class="panel"
+  [class.panel--open]="open()"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Pokémon details"
+  [attr.aria-hidden]="!open()"
+>
+  @if (pokemon(); as p) {
+    <header class="panel__header">
+      <div class="panel__title">
+        <span class="panel__id">#{{ p.id }}</span>
+        <h2 class="panel__name">{{ p.name }}</h2>
+      </div>
+      <button type="button" class="panel__close" (click)="onClose()" aria-label="Close details">
+        ×
+      </button>
+    </header>
+
+    <div class="panel__content">
+      <div class="panel__hero">
+        @if (p.sprite) {
+          <img class="panel__sprite" [src]="p.sprite" [alt]="p.name" width="120" height="120" />
+        } @else {
+          <span class="panel__sprite panel__sprite--empty" aria-hidden="true">?</span>
+        }
+        <div class="panel__types">
+          @for (type of p.types; track type) {
+            <app-type-badge [type]="type" />
+          }
+        </div>
+        <dl class="panel__meta">
+          <div class="panel__meta-item">
+            <dt>Height</dt>
+            <dd>{{ p.height / 10 }} m</dd>
+          </div>
+          <div class="panel__meta-item">
+            <dt>Weight</dt>
+            <dd>{{ p.weight / 10 }} kg</dd>
+          </div>
+          <div class="panel__meta-item">
+            <dt>Total</dt>
+            <dd>{{ p.total }}</dd>
+          </div>
+        </dl>
+      </div>
+
+      <section class="panel__section">
+        <h3 class="panel__section-title">Base stats</h3>
+        <app-stat-radar-chart [stats]="p.stats" />
+        <ul class="panel__stats">
+          @for (row of statRows(); track row.label) {
+            <li class="panel__stat">
+              <span class="panel__stat-label">{{ row.label }}</span>
+              <span class="panel__stat-value">{{ row.value }}</span>
+              <span class="panel__stat-bar">
+                <span class="panel__stat-fill" [style.width.%]="(row.value / maxStat) * 100"></span>
+              </span>
+            </li>
+          }
+        </ul>
+      </section>
+
+      <section class="panel__section">
+        <h3 class="panel__section-title">Abilities</h3>
+        <app-async-state
+          [state]="abilitiesState()"
+          (retry)="retryAbilities()"
+          loadingLabel="Loading abilities…"
+          emptyMessage="No abilities listed."
+        >
+          <ul class="panel__abilities">
+            @for (ability of abilitiesState().data ?? []; track ability.name) {
+              <li class="panel__ability">
+                <div class="panel__ability-head">
+                  <span class="panel__ability-name">{{ ability.name }}</span>
+                  @if (ability.isHidden) {
+                    <span class="panel__ability-tag">Hidden</span>
+                  }
+                </div>
+                @if (ability.shortEffect) {
+                  <p class="panel__ability-effect">{{ ability.shortEffect }}</p>
+                }
+              </li>
+            }
+          </ul>
+        </app-async-state>
+      </section>
+    </div>
+  }
+</aside>

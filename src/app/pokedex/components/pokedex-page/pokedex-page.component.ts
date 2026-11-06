@@ -15,6 +15,7 @@ import { loadingState } from '../../../common/models/async-state.model';
 import { Pokemon, SortDirection, SortKey, StatKey } from '../../models/pokemon.model';
 import { PokemonSelectors } from '../../state/pokemon.selectors';
 import { PokemonStore } from '../../state/pokemon.store';
+import { PokemonDetailPanelComponent } from '../pokemon-detail-panel/pokemon-detail-panel.component';
 
 interface StatColumn {
   readonly key: SortKey;
@@ -29,7 +30,12 @@ interface StatColumn {
  */
 @Component({
   selector: 'app-pokedex-page',
-  imports: [AsyncStateComponent, SkeletonComponent, TypeBadgeComponent],
+  imports: [
+    AsyncStateComponent,
+    SkeletonComponent,
+    TypeBadgeComponent,
+    PokemonDetailPanelComponent,
+  ],
   templateUrl: './pokedex-page.component.html',
   styleUrl: './pokedex-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -115,6 +121,10 @@ export class PokedexPageComponent implements OnInit {
 
   protected selectPokemon(pokemon: Pokemon): void {
     this.selectedPokemon.set(pokemon);
+  }
+
+  protected closePanel(): void {
+    this.selectedPokemon.set(null);
   }
 
   protected prevPage(): void {
