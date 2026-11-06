@@ -26,7 +26,7 @@ const GET_TEAMS = `
 `;
 
 const CREATE_TEAM = `
-  mutation CreateTeam($name: String!, $pokemonIds: [Int]!, $trainerId: ID, $createdAt: String) {
+  mutation CreateTeam($name: String!, $pokemonIds: [Int]!, $trainerId: ID!, $createdAt: String!) {
     createTeam(
       name: $name
       pokemon_ids: $pokemonIds
