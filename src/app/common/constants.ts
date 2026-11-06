@@ -1,5 +1,11 @@
 /** App-wide constants shared across features. */
 
+/** Public PokéAPI GraphQL endpoint (queries only, no auth). */
+export const POKEAPI_GRAPHQL_URL = 'https://beta.pokeapi.co/graphql/v1beta';
+
+/** Local json-graphql-server endpoint (queries + mutations). */
+export const MOCK_GRAPHQL_URL = 'http://localhost:4000/';
+
 /** Debounce applied to all text-search inputs, in milliseconds. */
 export const SEARCH_DEBOUNCE_MS = 300;
 
