@@ -36,6 +36,18 @@
       <option [value]="size">{{ size }} / page</option>
     }
   </select>
+  <select
+    #highlightSelect
+    class="toolbar__select"
+    aria-label="Highlight rows by type matchup"
+    [value]="highlightType() ?? ''"
+    (change)="onHighlightChange(highlightSelect.value)"
+  >
+    <option value="">Highlight: off</option>
+    @for (type of availableTypes(); track type) {
+      <option [value]="type">vs {{ type }}</option>
+    }
+  </select>
 </div>
 
 <app-async-state
@@ -76,6 +88,8 @@
           <tr
             class="pokedex-table__row"
             [class.pokedex-table__row--active]="selectedPokemon()?.id === pokemon.id"
+            [appTypeHighlight]="highlightType()"
+            [appTypeHighlightTypes]="pokemon.types"
             (click)="selectPokemon(pokemon)"
           >
             <td>

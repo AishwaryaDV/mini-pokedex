@@ -15,6 +15,7 @@ import { loadingState } from '../../../common/models/async-state.model';
 import { Pokemon, SortDirection, SortKey, StatKey } from '../../models/pokemon.model';
 import { PokemonSelectors } from '../../state/pokemon.selectors';
 import { PokemonStore } from '../../state/pokemon.store';
+import { TypeHighlightDirective } from '../../directives/type-highlight.directive';
 import { PokemonDetailPanelComponent } from '../pokemon-detail-panel/pokemon-detail-panel.component';
 
 interface StatColumn {
@@ -35,6 +36,7 @@ interface StatColumn {
     SkeletonComponent,
     TypeBadgeComponent,
     PokemonDetailPanelComponent,
+    TypeHighlightDirective,
   ],
   templateUrl: './pokedex-page.component.html',
   styleUrl: './pokedex-page.component.scss',
@@ -76,6 +78,7 @@ export class PokedexPageComponent implements OnInit {
 
   // Local UI state.
   protected readonly selectedPokemon = signal<Pokemon | null>(null);
+  protected readonly highlightType = signal<string | null>(null);
 
   protected readonly rows = computed(() => this.tableState().data ?? []);
   protected readonly pageCount = computed(() =>
@@ -96,6 +99,10 @@ export class PokedexPageComponent implements OnInit {
 
   protected onPageSizeChange(value: string): void {
     this.store.setPageSize(Number(value));
+  }
+
+  protected onHighlightChange(value: string): void {
+    this.highlightType.set(value || null);
   }
 
   /** Toggle sort on a column: first click ascending, second descending. */

@@ -159,6 +159,14 @@
   }
 }
 
+.type-highlight--weak {
+  box-shadow: inset 3px 0 0 var(--color-danger);
+}
+
+.type-highlight--strong {
+  box-shadow: inset 3px 0 0 var(--color-success);
+}
+
 .pagination {
   display: flex;
   align-items: center;
