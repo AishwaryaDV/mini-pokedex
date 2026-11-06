@@ -30,3 +30,14 @@ export interface PokemonAbility {
 
 /** Keys of {@link PokemonStats}, handy for building sortable stat columns. */
 export type StatKey = keyof PokemonStats;
+
+/** Every column the table can sort by. */
+export type SortKey = StatKey | 'id' | 'name' | 'total';
+
+export type SortDirection = 'asc' | 'desc';
+
+/** A sort instruction: which column and in which direction. */
+export interface PokemonSort {
+  readonly key: SortKey;
+  readonly direction: SortDirection;
+}
