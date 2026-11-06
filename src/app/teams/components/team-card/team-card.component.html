@@ -2,6 +2,7 @@
   class="team-card"
   [class.team-card--active]="active()"
   [attr.aria-current]="active() ? 'true' : null"
+  [style.animation-delay.ms]="index() * 60"
   tabindex="0"
   (click)="onSelect()"
   (keydown.enter)="onSelect()"

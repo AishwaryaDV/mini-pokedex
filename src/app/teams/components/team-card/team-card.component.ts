@@ -32,6 +32,9 @@ export class TeamCardComponent {
   /** Whether this card is the currently selected team. */
   readonly active = input<boolean>(false);
 
+  /** Position in the list, used to stagger the entry animation. */
+  readonly index = input<number>(0);
+
   /** Emits the team id when the card is selected. */
   readonly selected = output<string>();
 

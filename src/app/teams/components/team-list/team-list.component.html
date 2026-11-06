@@ -5,10 +5,11 @@
   emptyMessage="No teams yet. Build your first team below."
 >
   <div class="team-list">
-    @for (team of state().data ?? []; track team.id) {
+    @for (team of state().data ?? []; track team.id; let i = $index) {
       <app-team-card
         [team]="team"
         [pokemonById]="pokemonById()"
+        [index]="i"
         [active]="team.id === selectedId()"
         (selected)="selectTeam.emit($event)"
         (deleteRequested)="deleteTeam.emit($event)"
