@@ -20,8 +20,14 @@ export class TeamListComponent {
   /** Shared id→Pokémon lookup, forwarded to each card. */
   readonly pokemonById = input.required<Map<number, Pokemon>>();
 
+  /** Id of the currently selected team, for highlighting. */
+  readonly selectedId = input<string | null>(null);
+
   /** Emitted when the error state's Retry is clicked. */
   readonly retry = output<void>();
+
+  /** Emitted with a team id when a card is selected. */
+  readonly selectTeam = output<string>();
 
   /** Emitted with a team id when a card requests deletion. */
   readonly deleteTeam = output<string>();

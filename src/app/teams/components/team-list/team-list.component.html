@@ -9,6 +9,8 @@
       <app-team-card
         [team]="team"
         [pokemonById]="pokemonById()"
+        [active]="team.id === selectedId()"
+        (selected)="selectTeam.emit($event)"
         (deleteRequested)="deleteTeam.emit($event)"
       />
     }

@@ -1,6 +1,16 @@
-import { ChangeDetectionStrategy, Component, OnInit, computed, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  computed,
+  effect,
+  inject,
+  signal,
+} from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { SELECTED_TEAM_KEY } from '../../../common/constants';
 import { loadingState } from '../../../common/models/async-state.model';
+import { CacheService } from '../../../common/services/cache.service';
 import { Pokemon } from '../../../pokedex/models/pokemon.model';
 import { PokemonStore } from '../../../pokedex/state/pokemon.store';
 import { Team } from '../../models/team.model';
@@ -22,6 +32,7 @@ import { TeamListComponent } from '../team-list/team-list.component';
 export class TeamsPageComponent implements OnInit {
   private readonly teamStore = inject(TeamStore);
   private readonly pokemonStore = inject(PokemonStore);
+  private readonly cache = inject(CacheService);
 
   protected readonly teamsState = toSignal(this.teamStore.teamsState$, {
     initialValue: loadingState<Team[]>(),
@@ -31,9 +42,24 @@ export class TeamsPageComponent implements OnInit {
   });
   protected readonly pokemonOptions = computed(() => [...this.pokemonById().values()]);
 
+  /** Selected team id, restored from localStorage on load. */
+  protected readonly selectedTeamId = signal<string | null>(
+    this.cache.get<string>(SELECTED_TEAM_KEY),
+  );
+
+  constructor() {
+    // Persist the selected team whenever it changes.
+    effect(() => this.cache.set(SELECTED_TEAM_KEY, this.selectedTeamId()));
+  }
+
   ngOnInit(): void {
     this.teamStore.load();
     this.pokemonStore.load();
+  }
+
+  protected selectTeam(id: string): void {
+    // Toggle selection off if the same team is clicked again.
+    this.selectedTeamId.update((current) => (current === id ? null : id));
   }
 
   protected reloadTeams(): void {
@@ -41,6 +67,9 @@ export class TeamsPageComponent implements OnInit {
   }
 
   protected deleteTeam(id: string): void {
+    if (this.selectedTeamId() === id) {
+      this.selectedTeamId.set(null);
+    }
     this.teamStore.deleteTeam(id);
   }
 }

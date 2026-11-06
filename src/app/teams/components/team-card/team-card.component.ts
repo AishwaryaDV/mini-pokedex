@@ -29,6 +29,12 @@ export class TeamCardComponent {
   /** Shared id→Pokémon lookup, for stat/type derivations. */
   readonly pokemonById = input.required<Map<number, Pokemon>>();
 
+  /** Whether this card is the currently selected team. */
+  readonly active = input<boolean>(false);
+
+  /** Emits the team id when the card is selected. */
+  readonly selected = output<string>();
+
   /** Emits the team id when the user requests deletion. */
   readonly deleteRequested = output<string>();
 
@@ -62,7 +68,12 @@ export class TeamCardComponent {
     return pokemonSpriteUrl(id);
   }
 
-  protected onDelete(): void {
+  protected onSelect(): void {
+    this.selected.emit(this.team().id);
+  }
+
+  protected onDelete(event: Event): void {
+    event.stopPropagation();
     this.deleteRequested.emit(this.team().id);
   }
 }

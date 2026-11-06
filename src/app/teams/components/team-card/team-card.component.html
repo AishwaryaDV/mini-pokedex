@@ -1,4 +1,12 @@
-<article class="team-card">
+<article
+  class="team-card"
+  [class.team-card--active]="active()"
+  [attr.aria-current]="active() ? 'true' : null"
+  tabindex="0"
+  (click)="onSelect()"
+  (keydown.enter)="onSelect()"
+  (keydown.space)="onSelect()"
+>
   <header class="team-card__header">
     <div class="team-card__title">
       <h3 class="team-card__name">{{ team().name }}</h3>
@@ -7,7 +15,7 @@
     <button
       type="button"
       class="team-card__delete"
-      (click)="onDelete()"
+      (click)="onDelete($event)"
       [attr.aria-label]="'Delete ' + team().name"
     >
       ×

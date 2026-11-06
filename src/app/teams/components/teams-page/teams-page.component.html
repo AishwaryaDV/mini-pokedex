@@ -8,6 +8,8 @@
 <app-team-list
   [state]="teamsState()"
   [pokemonById]="pokemonById()"
+  [selectedId]="selectedTeamId()"
   (retry)="reloadTeams()"
+  (selectTeam)="selectTeam($event)"
   (deleteTeam)="deleteTeam($event)"
 />
