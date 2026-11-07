@@ -16,15 +16,16 @@ import {
   uniqueTeamNameValidator,
 } from '../../validators/team.validators';
 import { PokemonPickerComponent } from '../pokemon-picker/pokemon-picker.component';
+import { TeamSlotsComponent } from '../team-slots/team-slots.component';
 
 /**
  * Reactive form for building a team: a name (required, 3–30 chars, async-unique)
- * and 1–6 Pokémon chosen via the autocomplete picker. On submit it creates the
- * team through the store's optimistic flow and resets.
+ * and 1–6 Pokémon chosen via the autocomplete picker or the drag-and-drop slots.
+ * On submit it creates the team through the store's optimistic flow and resets.
  */
 @Component({
   selector: 'app-team-builder-form',
-  imports: [ReactiveFormsModule, PokemonPickerComponent],
+  imports: [ReactiveFormsModule, PokemonPickerComponent, TeamSlotsComponent],
   templateUrl: './team-builder-form.component.html',
   styleUrl: './team-builder-form.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -82,6 +83,11 @@ export class TeamBuilderFormComponent {
   protected removeMember(id: number): void {
     this.membersControl.setValue(this.membersControl.value.filter((memberId) => memberId !== id));
     this.membersControl.markAsTouched();
+  }
+
+  protected reorderMembers(ids: number[]): void {
+    this.membersControl.setValue(ids);
+    this.membersControl.markAsDirty();
   }
 
   protected submit(): void {

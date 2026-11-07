@@ -1,0 +1,58 @@
+<div class="slots" cdkDropListGroup>
+  <div class="slots__field">
+    <span class="slots__label">
+      Team slots ({{ selectedIds().length }}/{{ maxSize }}) — drag to add or reorder
+    </span>
+    <div
+      class="slots__team"
+      cdkDropList
+      [cdkDropListData]="selected()"
+      (cdkDropListDropped)="onSlotsDrop($event)"
+    >
+      @for (pokemon of selected(); track pokemon.id) {
+        <div class="slots__member" cdkDrag [cdkDragData]="pokemon">
+          <img [src]="spriteFor(pokemon.id)" [alt]="pokemon.name" width="44" height="44" />
+          <span class="slots__member-name">{{ pokemon.name }}</span>
+          <button
+            type="button"
+            class="slots__remove"
+            (click)="onRemoveClick(pokemon.id)"
+            [attr.aria-label]="'Remove ' + pokemon.name"
+          >
+            ×
+          </button>
+        </div>
+      } @empty {
+        <span class="slots__hint">Drag Pokémon here</span>
+      }
+    </div>
+  </div>
+
+  <div class="slots__field">
+    <input
+      class="slots__search"
+      type="text"
+      [formControl]="searchControl"
+      placeholder="Search to find Pokémon to drag in"
+      aria-label="Search Pokémon to drag into the team"
+      autocomplete="off"
+    />
+    <div
+      class="slots__palette"
+      cdkDropList
+      [cdkDropListData]="palette()"
+      (cdkDropListDropped)="onPaletteDrop($event)"
+    >
+      @for (pokemon of palette(); track pokemon.id) {
+        <div class="slots__palette-item" cdkDrag [cdkDragData]="pokemon">
+          <img [src]="spriteFor(pokemon.id)" alt="" aria-hidden="true" width="36" height="36" />
+          <span class="slots__palette-name">{{ pokemon.name }}</span>
+        </div>
+      } @empty {
+        <span class="slots__hint slots__hint--muted"
+          >Type above, then drag a result into a slot</span
+        >
+      }
+    </div>
+  </div>
+</div>

@@ -33,8 +33,16 @@
     <app-pokemon-picker
       [options]="options()"
       [selectedIds]="members()"
+      [showChips]="false"
       (add)="addMember($event)"
       (remove)="removeMember($event)"
+    />
+    <app-team-slots
+      [options]="options()"
+      [selectedIds]="members()"
+      (add)="addMember($event)"
+      (remove)="removeMember($event)"
+      (reorder)="reorderMembers($event)"
     />
     @if (membersControl.touched && membersControl.invalid) {
       <p class="form-field__error">

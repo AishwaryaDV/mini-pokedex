@@ -30,6 +30,9 @@ export class PokemonPickerComponent {
   /** Currently selected member ids. */
   readonly selectedIds = input.required<number[]>();
 
+  /** Whether to render selected members as chips (off when slots own the display). */
+  readonly showChips = input<boolean>(true);
+
   /** Emits a Pokémon id to add. */
   readonly add = output<number>();
 

@@ -32,7 +32,7 @@
     }
   </div>
 
-  @if (selected().length) {
+  @if (showChips() && selected().length) {
     <div class="picker__chips">
       @for (pokemon of selected(); track pokemon.id) {
         <app-chip
