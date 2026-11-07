@@ -76,8 +76,10 @@ handled on every async view — the table, the detail panel's abilities, and the
 **Resilience.** `GraphqlClientService` is a thin, typed client over `HttpClient`. Idempotent
 reads **retry with backoff**; mutations never retry (to avoid duplicates). Every failure —
 network, HTTP status, or GraphQL-envelope error — is mapped to a friendly message the stores
-surface to the UI. PokéAPI's beta endpoint is occasionally unavailable (5xx/timeout); when
-that happens the app shows the error state with Retry rather than breaking.
+surface to the UI. PokéAPI's beta endpoint is occasionally unavailable (5xx/timeout/401); when
+that happens Pokémon reads **fall back to a committed offline snapshot** (generated once from
+PokéAPI's REST API via `npm run snapshot`, served from `public/`), so the Pokédex keeps working.
+A true network cut still surfaces the error state with Retry.
 
 ## Features
 
@@ -113,9 +115,9 @@ Vitest, run with `npm test`:
 
 ## What I'd improve with more time
 
-- **Offline cache** of the Pokémon list (persist to `localStorage` / IndexedDB) so the
-  Pokédex survives a PokéAPI outage instead of showing the error state.
-- **Virtual scroll** for the full national dex, and/or server-side search for large sets.
+- **Auto-refresh the offline snapshot** (currently generated on demand via `npm run snapshot`)
+  and extend it to the full national dex.
+- **Server-side search** for very large sets, instead of filtering the cached list.
 - **More tests** — component/integration coverage for the picker and detail panel, plus
   end-to-end flows.
 - **Accessibility polish** — focus-trap + `Esc` to close the detail panel, and fuller
