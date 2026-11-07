@@ -1,0 +1,5413 @@
+{
+  "generatedAt": "2026-11-07",
+  "source": "https://pokeapi.co/api/v2",
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "height": 7,
+      "weight": 69,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "specialAttack": 65,
+        "specialDefense": 65,
+        "speed": 45
+      },
+      "total": 318
+    },
+    {
+      "id": 2,
+      "name": "ivysaur",
+      "height": 10,
+      "weight": 130,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "stats": {
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "specialAttack": 80,
+        "specialDefense": 80,
+        "speed": 60
+      },
+      "total": 405
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "height": 20,
+      "weight": 1000,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "specialAttack": 100,
+        "specialDefense": 100,
+        "speed": 80
+      },
+      "total": 525
+    },
+    {
+      "id": 4,
+      "name": "charmander",
+      "height": 6,
+      "weight": 85,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "specialAttack": 60,
+        "specialDefense": 50,
+        "speed": 65
+      },
+      "total": 309
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "height": 11,
+      "weight": 190,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "specialAttack": 80,
+        "specialDefense": 65,
+        "speed": 80
+      },
+      "total": 405
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "height": 17,
+      "weight": 905,
+      "types": ["fire", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      "stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "specialAttack": 109,
+        "specialDefense": 85,
+        "speed": 100
+      },
+      "total": 534
+    },
+    {
+      "id": 7,
+      "name": "squirtle",
+      "height": 5,
+      "weight": 90,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "stats": {
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "specialAttack": 50,
+        "specialDefense": 64,
+        "speed": 43
+      },
+      "total": 314
+    },
+    {
+      "id": 8,
+      "name": "wartortle",
+      "height": 10,
+      "weight": 225,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+      "stats": {
+        "hp": 59,
+        "attack": 63,
+        "defense": 80,
+        "specialAttack": 65,
+        "specialDefense": 80,
+        "speed": 58
+      },
+      "total": 405
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "height": 16,
+      "weight": 855,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      "stats": {
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "specialAttack": 85,
+        "specialDefense": 105,
+        "speed": 78
+      },
+      "total": 530
+    },
+    {
+      "id": 10,
+      "name": "caterpie",
+      "height": 3,
+      "weight": 29,
+      "types": ["bug"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "stats": {
+        "hp": 45,
+        "attack": 30,
+        "defense": 35,
+        "specialAttack": 20,
+        "specialDefense": 20,
+        "speed": 45
+      },
+      "total": 195
+    },
+    {
+      "id": 11,
+      "name": "metapod",
+      "height": 7,
+      "weight": 99,
+      "types": ["bug"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "stats": {
+        "hp": 50,
+        "attack": 20,
+        "defense": 55,
+        "specialAttack": 25,
+        "specialDefense": 25,
+        "speed": 30
+      },
+      "total": 205
+    },
+    {
+      "id": 12,
+      "name": "butterfree",
+      "height": 11,
+      "weight": 320,
+      "types": ["bug", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+      "stats": {
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "specialAttack": 90,
+        "specialDefense": 80,
+        "speed": 70
+      },
+      "total": 395
+    },
+    {
+      "id": 13,
+      "name": "weedle",
+      "height": 3,
+      "weight": 32,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+      "stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "specialAttack": 20,
+        "specialDefense": 20,
+        "speed": 50
+      },
+      "total": 195
+    },
+    {
+      "id": 14,
+      "name": "kakuna",
+      "height": 6,
+      "weight": 100,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+      "stats": {
+        "hp": 45,
+        "attack": 25,
+        "defense": 50,
+        "specialAttack": 25,
+        "specialDefense": 25,
+        "speed": 35
+      },
+      "total": 205
+    },
+    {
+      "id": 15,
+      "name": "beedrill",
+      "height": 10,
+      "weight": 295,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 40,
+        "specialAttack": 45,
+        "specialDefense": 80,
+        "speed": 75
+      },
+      "total": 395
+    },
+    {
+      "id": 16,
+      "name": "pidgey",
+      "height": 3,
+      "weight": 18,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "specialAttack": 35,
+        "specialDefense": 35,
+        "speed": 56
+      },
+      "total": 251
+    },
+    {
+      "id": 17,
+      "name": "pidgeotto",
+      "height": 11,
+      "weight": 300,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+      "stats": {
+        "hp": 63,
+        "attack": 60,
+        "defense": 55,
+        "specialAttack": 50,
+        "specialDefense": 50,
+        "speed": 71
+      },
+      "total": 349
+    },
+    {
+      "id": 18,
+      "name": "pidgeot",
+      "height": 15,
+      "weight": 395,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+      "stats": {
+        "hp": 83,
+        "attack": 80,
+        "defense": 75,
+        "specialAttack": 70,
+        "specialDefense": 70,
+        "speed": 101
+      },
+      "total": 479
+    },
+    {
+      "id": 19,
+      "name": "rattata",
+      "height": 3,
+      "weight": 35,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+      "stats": {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "specialAttack": 25,
+        "specialDefense": 35,
+        "speed": 72
+      },
+      "total": 253
+    },
+    {
+      "id": 20,
+      "name": "raticate",
+      "height": 7,
+      "weight": 185,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+      "stats": {
+        "hp": 55,
+        "attack": 81,
+        "defense": 60,
+        "specialAttack": 50,
+        "specialDefense": 70,
+        "speed": 97
+      },
+      "total": 413
+    },
+    {
+      "id": 21,
+      "name": "spearow",
+      "height": 3,
+      "weight": 20,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+      "stats": {
+        "hp": 40,
+        "attack": 60,
+        "defense": 30,
+        "specialAttack": 31,
+        "specialDefense": 31,
+        "speed": 70
+      },
+      "total": 262
+    },
+    {
+      "id": 22,
+      "name": "fearow",
+      "height": 12,
+      "weight": 380,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 65,
+        "specialAttack": 61,
+        "specialDefense": 61,
+        "speed": 100
+      },
+      "total": 442
+    },
+    {
+      "id": 23,
+      "name": "ekans",
+      "height": 20,
+      "weight": 69,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+      "stats": {
+        "hp": 35,
+        "attack": 60,
+        "defense": 44,
+        "specialAttack": 40,
+        "specialDefense": 54,
+        "speed": 55
+      },
+      "total": 288
+    },
+    {
+      "id": 24,
+      "name": "arbok",
+      "height": 35,
+      "weight": 650,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+      "stats": {
+        "hp": 60,
+        "attack": 95,
+        "defense": 69,
+        "specialAttack": 65,
+        "specialDefense": 79,
+        "speed": 80
+      },
+      "total": 448
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "height": 4,
+      "weight": 60,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+      "stats": {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "specialAttack": 50,
+        "specialDefense": 50,
+        "speed": 90
+      },
+      "total": 320
+    },
+    {
+      "id": 26,
+      "name": "raichu",
+      "height": 8,
+      "weight": 300,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+      "stats": {
+        "hp": 60,
+        "attack": 90,
+        "defense": 55,
+        "specialAttack": 90,
+        "specialDefense": 80,
+        "speed": 110
+      },
+      "total": 485
+    },
+    {
+      "id": 27,
+      "name": "sandshrew",
+      "height": 6,
+      "weight": 120,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 85,
+        "specialAttack": 20,
+        "specialDefense": 30,
+        "speed": 40
+      },
+      "total": 300
+    },
+    {
+      "id": 28,
+      "name": "sandslash",
+      "height": 10,
+      "weight": 295,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 110,
+        "specialAttack": 45,
+        "specialDefense": 55,
+        "speed": 65
+      },
+      "total": 450
+    },
+    {
+      "id": 29,
+      "name": "nidoran-f",
+      "height": 4,
+      "weight": 70,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+      "stats": {
+        "hp": 55,
+        "attack": 47,
+        "defense": 52,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 41
+      },
+      "total": 275
+    },
+    {
+      "id": 30,
+      "name": "nidorina",
+      "height": 8,
+      "weight": 200,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+      "stats": {
+        "hp": 70,
+        "attack": 62,
+        "defense": 67,
+        "specialAttack": 55,
+        "specialDefense": 55,
+        "speed": 56
+      },
+      "total": 365
+    },
+    {
+      "id": 31,
+      "name": "nidoqueen",
+      "height": 13,
+      "weight": 600,
+      "types": ["poison", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+      "stats": {
+        "hp": 90,
+        "attack": 92,
+        "defense": 87,
+        "specialAttack": 75,
+        "specialDefense": 85,
+        "speed": 76
+      },
+      "total": 505
+    },
+    {
+      "id": 32,
+      "name": "nidoran-m",
+      "height": 5,
+      "weight": 90,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+      "stats": {
+        "hp": 46,
+        "attack": 57,
+        "defense": 40,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 50
+      },
+      "total": 273
+    },
+    {
+      "id": 33,
+      "name": "nidorino",
+      "height": 9,
+      "weight": 195,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+      "stats": {
+        "hp": 61,
+        "attack": 72,
+        "defense": 57,
+        "specialAttack": 55,
+        "specialDefense": 55,
+        "speed": 65
+      },
+      "total": 365
+    },
+    {
+      "id": 34,
+      "name": "nidoking",
+      "height": 14,
+      "weight": 620,
+      "types": ["poison", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+      "stats": {
+        "hp": 81,
+        "attack": 102,
+        "defense": 77,
+        "specialAttack": 85,
+        "specialDefense": 75,
+        "speed": 85
+      },
+      "total": 505
+    },
+    {
+      "id": 35,
+      "name": "clefairy",
+      "height": 6,
+      "weight": 75,
+      "types": ["fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+      "stats": {
+        "hp": 70,
+        "attack": 45,
+        "defense": 48,
+        "specialAttack": 60,
+        "specialDefense": 65,
+        "speed": 35
+      },
+      "total": 323
+    },
+    {
+      "id": 36,
+      "name": "clefable",
+      "height": 13,
+      "weight": 400,
+      "types": ["fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+      "stats": {
+        "hp": 95,
+        "attack": 70,
+        "defense": 73,
+        "specialAttack": 95,
+        "specialDefense": 90,
+        "speed": 60
+      },
+      "total": 483
+    },
+    {
+      "id": 37,
+      "name": "vulpix",
+      "height": 6,
+      "weight": 99,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "specialAttack": 50,
+        "specialDefense": 65,
+        "speed": 65
+      },
+      "total": 299
+    },
+    {
+      "id": 38,
+      "name": "ninetales",
+      "height": 11,
+      "weight": 199,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+      "stats": {
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "specialAttack": 81,
+        "specialDefense": 100,
+        "speed": 100
+      },
+      "total": 505
+    },
+    {
+      "id": 39,
+      "name": "jigglypuff",
+      "height": 5,
+      "weight": 55,
+      "types": ["normal", "fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+      "stats": {
+        "hp": 115,
+        "attack": 45,
+        "defense": 20,
+        "specialAttack": 45,
+        "specialDefense": 25,
+        "speed": 20
+      },
+      "total": 270
+    },
+    {
+      "id": 40,
+      "name": "wigglytuff",
+      "height": 10,
+      "weight": 120,
+      "types": ["normal", "fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+      "stats": {
+        "hp": 140,
+        "attack": 70,
+        "defense": 45,
+        "specialAttack": 85,
+        "specialDefense": 50,
+        "speed": 45
+      },
+      "total": 435
+    },
+    {
+      "id": 41,
+      "name": "zubat",
+      "height": 8,
+      "weight": 75,
+      "types": ["poison", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "specialAttack": 30,
+        "specialDefense": 40,
+        "speed": 55
+      },
+      "total": 245
+    },
+    {
+      "id": 42,
+      "name": "golbat",
+      "height": 16,
+      "weight": 550,
+      "types": ["poison", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "specialAttack": 65,
+        "specialDefense": 75,
+        "speed": 90
+      },
+      "total": 455
+    },
+    {
+      "id": 43,
+      "name": "oddish",
+      "height": 5,
+      "weight": 54,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+      "stats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 55,
+        "specialAttack": 75,
+        "specialDefense": 65,
+        "speed": 30
+      },
+      "total": 320
+    },
+    {
+      "id": 44,
+      "name": "gloom",
+      "height": 8,
+      "weight": 86,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 70,
+        "specialAttack": 85,
+        "specialDefense": 75,
+        "speed": 40
+      },
+      "total": 395
+    },
+    {
+      "id": 45,
+      "name": "vileplume",
+      "height": 12,
+      "weight": 186,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 85,
+        "specialAttack": 110,
+        "specialDefense": 90,
+        "speed": 50
+      },
+      "total": 490
+    },
+    {
+      "id": 46,
+      "name": "paras",
+      "height": 3,
+      "weight": 54,
+      "types": ["bug", "grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+      "stats": {
+        "hp": 35,
+        "attack": 70,
+        "defense": 55,
+        "specialAttack": 45,
+        "specialDefense": 55,
+        "speed": 25
+      },
+      "total": 285
+    },
+    {
+      "id": 47,
+      "name": "parasect",
+      "height": 10,
+      "weight": 295,
+      "types": ["bug", "grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+      "stats": {
+        "hp": 60,
+        "attack": 95,
+        "defense": 80,
+        "specialAttack": 60,
+        "specialDefense": 80,
+        "speed": 30
+      },
+      "total": 405
+    },
+    {
+      "id": 48,
+      "name": "venonat",
+      "height": 10,
+      "weight": 300,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+      "stats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "specialAttack": 40,
+        "specialDefense": 55,
+        "speed": 45
+      },
+      "total": 305
+    },
+    {
+      "id": 49,
+      "name": "venomoth",
+      "height": 15,
+      "weight": 125,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+      "stats": {
+        "hp": 70,
+        "attack": 65,
+        "defense": 60,
+        "specialAttack": 90,
+        "specialDefense": 75,
+        "speed": 90
+      },
+      "total": 450
+    },
+    {
+      "id": 50,
+      "name": "diglett",
+      "height": 2,
+      "weight": 8,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+      "stats": {
+        "hp": 10,
+        "attack": 55,
+        "defense": 25,
+        "specialAttack": 35,
+        "specialDefense": 45,
+        "speed": 95
+      },
+      "total": 265
+    },
+    {
+      "id": 51,
+      "name": "dugtrio",
+      "height": 7,
+      "weight": 333,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+      "stats": {
+        "hp": 35,
+        "attack": 100,
+        "defense": 50,
+        "specialAttack": 50,
+        "specialDefense": 70,
+        "speed": 120
+      },
+      "total": 425
+    },
+    {
+      "id": 52,
+      "name": "meowth",
+      "height": 4,
+      "weight": 42,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 90
+      },
+      "total": 290
+    },
+    {
+      "id": 53,
+      "name": "persian",
+      "height": 10,
+      "weight": 320,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 60,
+        "specialAttack": 65,
+        "specialDefense": 65,
+        "speed": 115
+      },
+      "total": 440
+    },
+    {
+      "id": 54,
+      "name": "psyduck",
+      "height": 8,
+      "weight": 196,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+      "stats": {
+        "hp": 50,
+        "attack": 52,
+        "defense": 48,
+        "specialAttack": 65,
+        "specialDefense": 50,
+        "speed": 55
+      },
+      "total": 320
+    },
+    {
+      "id": 55,
+      "name": "golduck",
+      "height": 17,
+      "weight": 766,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 78,
+        "specialAttack": 95,
+        "specialDefense": 80,
+        "speed": 85
+      },
+      "total": 500
+    },
+    {
+      "id": 56,
+      "name": "mankey",
+      "height": 5,
+      "weight": 280,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 35,
+        "specialAttack": 35,
+        "specialDefense": 45,
+        "speed": 70
+      },
+      "total": 305
+    },
+    {
+      "id": 57,
+      "name": "primeape",
+      "height": 10,
+      "weight": 320,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+      "stats": {
+        "hp": 65,
+        "attack": 105,
+        "defense": 60,
+        "specialAttack": 60,
+        "specialDefense": 70,
+        "speed": 95
+      },
+      "total": 455
+    },
+    {
+      "id": 58,
+      "name": "growlithe",
+      "height": 7,
+      "weight": 190,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+      "stats": {
+        "hp": 55,
+        "attack": 70,
+        "defense": 45,
+        "specialAttack": 70,
+        "specialDefense": 50,
+        "speed": 60
+      },
+      "total": 350
+    },
+    {
+      "id": 59,
+      "name": "arcanine",
+      "height": 19,
+      "weight": 1550,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+      "stats": {
+        "hp": 90,
+        "attack": 110,
+        "defense": 80,
+        "specialAttack": 100,
+        "specialDefense": 80,
+        "speed": 95
+      },
+      "total": 555
+    },
+    {
+      "id": 60,
+      "name": "poliwag",
+      "height": 6,
+      "weight": 124,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+      "stats": {
+        "hp": 40,
+        "attack": 50,
+        "defense": 40,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 90
+      },
+      "total": 300
+    },
+    {
+      "id": 61,
+      "name": "poliwhirl",
+      "height": 10,
+      "weight": 200,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 65,
+        "specialAttack": 50,
+        "specialDefense": 50,
+        "speed": 90
+      },
+      "total": 385
+    },
+    {
+      "id": 62,
+      "name": "poliwrath",
+      "height": 13,
+      "weight": 540,
+      "types": ["water", "fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+      "stats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 95,
+        "specialAttack": 70,
+        "specialDefense": 90,
+        "speed": 70
+      },
+      "total": 510
+    },
+    {
+      "id": 63,
+      "name": "abra",
+      "height": 9,
+      "weight": 195,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+      "stats": {
+        "hp": 25,
+        "attack": 20,
+        "defense": 15,
+        "specialAttack": 105,
+        "specialDefense": 55,
+        "speed": 90
+      },
+      "total": 310
+    },
+    {
+      "id": 64,
+      "name": "kadabra",
+      "height": 13,
+      "weight": 565,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+      "stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "specialAttack": 120,
+        "specialDefense": 70,
+        "speed": 105
+      },
+      "total": 400
+    },
+    {
+      "id": 65,
+      "name": "alakazam",
+      "height": 15,
+      "weight": 480,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+      "stats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 45,
+        "specialAttack": 135,
+        "specialDefense": 95,
+        "speed": 120
+      },
+      "total": 500
+    },
+    {
+      "id": 66,
+      "name": "machop",
+      "height": 8,
+      "weight": 195,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 50,
+        "specialAttack": 35,
+        "specialDefense": 35,
+        "speed": 35
+      },
+      "total": 305
+    },
+    {
+      "id": 67,
+      "name": "machoke",
+      "height": 15,
+      "weight": 705,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+      "stats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 70,
+        "specialAttack": 50,
+        "specialDefense": 60,
+        "speed": 45
+      },
+      "total": 405
+    },
+    {
+      "id": 68,
+      "name": "machamp",
+      "height": 16,
+      "weight": 1300,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+      "stats": {
+        "hp": 90,
+        "attack": 130,
+        "defense": 80,
+        "specialAttack": 65,
+        "specialDefense": 85,
+        "speed": 55
+      },
+      "total": 505
+    },
+    {
+      "id": 69,
+      "name": "bellsprout",
+      "height": 7,
+      "weight": 40,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 35,
+        "specialAttack": 70,
+        "specialDefense": 30,
+        "speed": 40
+      },
+      "total": 300
+    },
+    {
+      "id": 70,
+      "name": "weepinbell",
+      "height": 10,
+      "weight": 64,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 50,
+        "specialAttack": 85,
+        "specialDefense": 45,
+        "speed": 55
+      },
+      "total": 390
+    },
+    {
+      "id": 71,
+      "name": "victreebel",
+      "height": 17,
+      "weight": 155,
+      "types": ["grass", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+      "stats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "specialAttack": 100,
+        "specialDefense": 70,
+        "speed": 70
+      },
+      "total": 490
+    },
+    {
+      "id": 72,
+      "name": "tentacool",
+      "height": 9,
+      "weight": 455,
+      "types": ["water", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+      "stats": {
+        "hp": 40,
+        "attack": 40,
+        "defense": 35,
+        "specialAttack": 50,
+        "specialDefense": 100,
+        "speed": 70
+      },
+      "total": 335
+    },
+    {
+      "id": 73,
+      "name": "tentacruel",
+      "height": 16,
+      "weight": 550,
+      "types": ["water", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+      "stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 65,
+        "specialAttack": 80,
+        "specialDefense": 120,
+        "speed": 100
+      },
+      "total": 515
+    },
+    {
+      "id": 74,
+      "name": "geodude",
+      "height": 4,
+      "weight": 200,
+      "types": ["rock", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "specialAttack": 30,
+        "specialDefense": 30,
+        "speed": 20
+      },
+      "total": 300
+    },
+    {
+      "id": 75,
+      "name": "graveler",
+      "height": 10,
+      "weight": 1050,
+      "types": ["rock", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "specialAttack": 45,
+        "specialDefense": 45,
+        "speed": 35
+      },
+      "total": 390
+    },
+    {
+      "id": 76,
+      "name": "golem",
+      "height": 14,
+      "weight": 3000,
+      "types": ["rock", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+      "stats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "specialAttack": 55,
+        "specialDefense": 65,
+        "speed": 45
+      },
+      "total": 495
+    },
+    {
+      "id": 77,
+      "name": "ponyta",
+      "height": 10,
+      "weight": 300,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+      "stats": {
+        "hp": 50,
+        "attack": 85,
+        "defense": 55,
+        "specialAttack": 65,
+        "specialDefense": 65,
+        "speed": 90
+      },
+      "total": 410
+    },
+    {
+      "id": 78,
+      "name": "rapidash",
+      "height": 17,
+      "weight": 950,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+      "stats": {
+        "hp": 65,
+        "attack": 100,
+        "defense": 70,
+        "specialAttack": 80,
+        "specialDefense": 80,
+        "speed": 105
+      },
+      "total": 500
+    },
+    {
+      "id": 79,
+      "name": "slowpoke",
+      "height": 12,
+      "weight": 360,
+      "types": ["water", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+      "stats": {
+        "hp": 90,
+        "attack": 65,
+        "defense": 65,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 15
+      },
+      "total": 315
+    },
+    {
+      "id": 80,
+      "name": "slowbro",
+      "height": 16,
+      "weight": 785,
+      "types": ["water", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+      "stats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 110,
+        "specialAttack": 100,
+        "specialDefense": 80,
+        "speed": 30
+      },
+      "total": 490
+    },
+    {
+      "id": 81,
+      "name": "magnemite",
+      "height": 3,
+      "weight": 60,
+      "types": ["electric", "steel"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+      "stats": {
+        "hp": 25,
+        "attack": 35,
+        "defense": 70,
+        "specialAttack": 95,
+        "specialDefense": 55,
+        "speed": 45
+      },
+      "total": 325
+    },
+    {
+      "id": 82,
+      "name": "magneton",
+      "height": 10,
+      "weight": 600,
+      "types": ["electric", "steel"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+      "stats": {
+        "hp": 50,
+        "attack": 60,
+        "defense": 95,
+        "specialAttack": 120,
+        "specialDefense": 70,
+        "speed": 70
+      },
+      "total": 465
+    },
+    {
+      "id": 83,
+      "name": "farfetchd",
+      "height": 8,
+      "weight": 150,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+      "stats": {
+        "hp": 52,
+        "attack": 90,
+        "defense": 55,
+        "specialAttack": 58,
+        "specialDefense": 62,
+        "speed": 60
+      },
+      "total": 377
+    },
+    {
+      "id": 84,
+      "name": "doduo",
+      "height": 14,
+      "weight": 392,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+      "stats": {
+        "hp": 35,
+        "attack": 85,
+        "defense": 45,
+        "specialAttack": 35,
+        "specialDefense": 35,
+        "speed": 75
+      },
+      "total": 310
+    },
+    {
+      "id": 85,
+      "name": "dodrio",
+      "height": 18,
+      "weight": 852,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+      "stats": {
+        "hp": 60,
+        "attack": 110,
+        "defense": 70,
+        "specialAttack": 60,
+        "specialDefense": 60,
+        "speed": 110
+      },
+      "total": 470
+    },
+    {
+      "id": 86,
+      "name": "seel",
+      "height": 11,
+      "weight": 900,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+      "stats": {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "specialAttack": 45,
+        "specialDefense": 70,
+        "speed": 45
+      },
+      "total": 325
+    },
+    {
+      "id": 87,
+      "name": "dewgong",
+      "height": 17,
+      "weight": 1200,
+      "types": ["water", "ice"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "specialAttack": 70,
+        "specialDefense": 95,
+        "speed": 70
+      },
+      "total": 475
+    },
+    {
+      "id": 88,
+      "name": "grimer",
+      "height": 9,
+      "weight": 300,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "specialAttack": 40,
+        "specialDefense": 50,
+        "speed": 25
+      },
+      "total": 325
+    },
+    {
+      "id": 89,
+      "name": "muk",
+      "height": 12,
+      "weight": 300,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+      "stats": {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "specialAttack": 65,
+        "specialDefense": 100,
+        "speed": 50
+      },
+      "total": 500
+    },
+    {
+      "id": 90,
+      "name": "shellder",
+      "height": 3,
+      "weight": 40,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+      "stats": {
+        "hp": 30,
+        "attack": 65,
+        "defense": 100,
+        "specialAttack": 45,
+        "specialDefense": 25,
+        "speed": 40
+      },
+      "total": 305
+    },
+    {
+      "id": 91,
+      "name": "cloyster",
+      "height": 15,
+      "weight": 1325,
+      "types": ["water", "ice"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "specialAttack": 85,
+        "specialDefense": 45,
+        "speed": 70
+      },
+      "total": 525
+    },
+    {
+      "id": 92,
+      "name": "gastly",
+      "height": 13,
+      "weight": 1,
+      "types": ["ghost", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+      "stats": {
+        "hp": 30,
+        "attack": 35,
+        "defense": 30,
+        "specialAttack": 100,
+        "specialDefense": 35,
+        "speed": 80
+      },
+      "total": 310
+    },
+    {
+      "id": 93,
+      "name": "haunter",
+      "height": 16,
+      "weight": 1,
+      "types": ["ghost", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+      "stats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 45,
+        "specialAttack": 115,
+        "specialDefense": 55,
+        "speed": 95
+      },
+      "total": 405
+    },
+    {
+      "id": 94,
+      "name": "gengar",
+      "height": 15,
+      "weight": 405,
+      "types": ["ghost", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "specialAttack": 130,
+        "specialDefense": 75,
+        "speed": 110
+      },
+      "total": 500
+    },
+    {
+      "id": 95,
+      "name": "onix",
+      "height": 88,
+      "weight": 2100,
+      "types": ["rock", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+      "stats": {
+        "hp": 35,
+        "attack": 45,
+        "defense": 160,
+        "specialAttack": 30,
+        "specialDefense": 45,
+        "speed": 70
+      },
+      "total": 385
+    },
+    {
+      "id": 96,
+      "name": "drowzee",
+      "height": 10,
+      "weight": 324,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+      "stats": {
+        "hp": 60,
+        "attack": 48,
+        "defense": 45,
+        "specialAttack": 43,
+        "specialDefense": 90,
+        "speed": 42
+      },
+      "total": 328
+    },
+    {
+      "id": 97,
+      "name": "hypno",
+      "height": 16,
+      "weight": 756,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+      "stats": {
+        "hp": 85,
+        "attack": 73,
+        "defense": 70,
+        "specialAttack": 73,
+        "specialDefense": 115,
+        "speed": 67
+      },
+      "total": 483
+    },
+    {
+      "id": 98,
+      "name": "krabby",
+      "height": 4,
+      "weight": 65,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+      "stats": {
+        "hp": 30,
+        "attack": 105,
+        "defense": 90,
+        "specialAttack": 25,
+        "specialDefense": 25,
+        "speed": 50
+      },
+      "total": 325
+    },
+    {
+      "id": 99,
+      "name": "kingler",
+      "height": 13,
+      "weight": 600,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+      "stats": {
+        "hp": 55,
+        "attack": 130,
+        "defense": 115,
+        "specialAttack": 50,
+        "specialDefense": 50,
+        "speed": 75
+      },
+      "total": 475
+    },
+    {
+      "id": 100,
+      "name": "voltorb",
+      "height": 5,
+      "weight": 104,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+      "stats": {
+        "hp": 40,
+        "attack": 30,
+        "defense": 50,
+        "specialAttack": 55,
+        "specialDefense": 55,
+        "speed": 100
+      },
+      "total": 330
+    },
+    {
+      "id": 101,
+      "name": "electrode",
+      "height": 12,
+      "weight": 666,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+      "stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "specialAttack": 80,
+        "specialDefense": 80,
+        "speed": 150
+      },
+      "total": 490
+    },
+    {
+      "id": 102,
+      "name": "exeggcute",
+      "height": 4,
+      "weight": 25,
+      "types": ["grass", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+      "stats": {
+        "hp": 60,
+        "attack": 40,
+        "defense": 80,
+        "specialAttack": 60,
+        "specialDefense": 45,
+        "speed": 40
+      },
+      "total": 325
+    },
+    {
+      "id": 103,
+      "name": "exeggutor",
+      "height": 20,
+      "weight": 1200,
+      "types": ["grass", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+      "stats": {
+        "hp": 95,
+        "attack": 95,
+        "defense": 85,
+        "specialAttack": 125,
+        "specialDefense": 75,
+        "speed": 55
+      },
+      "total": 530
+    },
+    {
+      "id": 104,
+      "name": "cubone",
+      "height": 4,
+      "weight": 65,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+      "stats": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 95,
+        "specialAttack": 40,
+        "specialDefense": 50,
+        "speed": 35
+      },
+      "total": 320
+    },
+    {
+      "id": 105,
+      "name": "marowak",
+      "height": 10,
+      "weight": 450,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "specialAttack": 50,
+        "specialDefense": 80,
+        "speed": 45
+      },
+      "total": 425
+    },
+    {
+      "id": 106,
+      "name": "hitmonlee",
+      "height": 15,
+      "weight": 498,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+      "stats": {
+        "hp": 50,
+        "attack": 120,
+        "defense": 53,
+        "specialAttack": 35,
+        "specialDefense": 110,
+        "speed": 87
+      },
+      "total": 455
+    },
+    {
+      "id": 107,
+      "name": "hitmonchan",
+      "height": 14,
+      "weight": 502,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+      "stats": {
+        "hp": 50,
+        "attack": 105,
+        "defense": 79,
+        "specialAttack": 35,
+        "specialDefense": 110,
+        "speed": 76
+      },
+      "total": 455
+    },
+    {
+      "id": 108,
+      "name": "lickitung",
+      "height": 12,
+      "weight": 655,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+      "stats": {
+        "hp": 90,
+        "attack": 55,
+        "defense": 75,
+        "specialAttack": 60,
+        "specialDefense": 75,
+        "speed": 30
+      },
+      "total": 385
+    },
+    {
+      "id": 109,
+      "name": "koffing",
+      "height": 6,
+      "weight": 10,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+      "stats": {
+        "hp": 40,
+        "attack": 65,
+        "defense": 95,
+        "specialAttack": 60,
+        "specialDefense": 45,
+        "speed": 35
+      },
+      "total": 340
+    },
+    {
+      "id": 110,
+      "name": "weezing",
+      "height": 12,
+      "weight": 95,
+      "types": ["poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "specialAttack": 85,
+        "specialDefense": 70,
+        "speed": 60
+      },
+      "total": 490
+    },
+    {
+      "id": 111,
+      "name": "rhyhorn",
+      "height": 10,
+      "weight": 1150,
+      "types": ["ground", "rock"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+      "stats": {
+        "hp": 80,
+        "attack": 85,
+        "defense": 95,
+        "specialAttack": 30,
+        "specialDefense": 30,
+        "speed": 25
+      },
+      "total": 345
+    },
+    {
+      "id": 112,
+      "name": "rhydon",
+      "height": 19,
+      "weight": 1200,
+      "types": ["ground", "rock"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+      "stats": {
+        "hp": 105,
+        "attack": 130,
+        "defense": 120,
+        "specialAttack": 45,
+        "specialDefense": 45,
+        "speed": 40
+      },
+      "total": 485
+    },
+    {
+      "id": 113,
+      "name": "chansey",
+      "height": 11,
+      "weight": 346,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+      "stats": {
+        "hp": 250,
+        "attack": 5,
+        "defense": 5,
+        "specialAttack": 35,
+        "specialDefense": 105,
+        "speed": 50
+      },
+      "total": 450
+    },
+    {
+      "id": 114,
+      "name": "tangela",
+      "height": 10,
+      "weight": 350,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+      "stats": {
+        "hp": 65,
+        "attack": 55,
+        "defense": 115,
+        "specialAttack": 100,
+        "specialDefense": 40,
+        "speed": 60
+      },
+      "total": 435
+    },
+    {
+      "id": 115,
+      "name": "kangaskhan",
+      "height": 22,
+      "weight": 800,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+      "stats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 80,
+        "specialAttack": 40,
+        "specialDefense": 80,
+        "speed": 90
+      },
+      "total": 490
+    },
+    {
+      "id": 116,
+      "name": "horsea",
+      "height": 4,
+      "weight": 80,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+      "stats": {
+        "hp": 30,
+        "attack": 40,
+        "defense": 70,
+        "specialAttack": 70,
+        "specialDefense": 25,
+        "speed": 60
+      },
+      "total": 295
+    },
+    {
+      "id": 117,
+      "name": "seadra",
+      "height": 12,
+      "weight": 250,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+      "stats": {
+        "hp": 55,
+        "attack": 65,
+        "defense": 95,
+        "specialAttack": 95,
+        "specialDefense": 45,
+        "speed": 85
+      },
+      "total": 440
+    },
+    {
+      "id": 118,
+      "name": "goldeen",
+      "height": 6,
+      "weight": 150,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+      "stats": {
+        "hp": 45,
+        "attack": 67,
+        "defense": 60,
+        "specialAttack": 35,
+        "specialDefense": 50,
+        "speed": 63
+      },
+      "total": 320
+    },
+    {
+      "id": 119,
+      "name": "seaking",
+      "height": 13,
+      "weight": 390,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+      "stats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 65,
+        "specialAttack": 65,
+        "specialDefense": 80,
+        "speed": 68
+      },
+      "total": 450
+    },
+    {
+      "id": 120,
+      "name": "staryu",
+      "height": 8,
+      "weight": 345,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+      "stats": {
+        "hp": 30,
+        "attack": 45,
+        "defense": 55,
+        "specialAttack": 70,
+        "specialDefense": 55,
+        "speed": 85
+      },
+      "total": 340
+    },
+    {
+      "id": 121,
+      "name": "starmie",
+      "height": 11,
+      "weight": 800,
+      "types": ["water", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+      "stats": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 85,
+        "specialAttack": 100,
+        "specialDefense": 85,
+        "speed": 115
+      },
+      "total": 520
+    },
+    {
+      "id": 122,
+      "name": "mr-mime",
+      "height": 13,
+      "weight": 545,
+      "types": ["psychic", "fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 65,
+        "specialAttack": 100,
+        "specialDefense": 120,
+        "speed": 90
+      },
+      "total": 460
+    },
+    {
+      "id": 123,
+      "name": "scyther",
+      "height": 15,
+      "weight": 560,
+      "types": ["bug", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+      "stats": {
+        "hp": 70,
+        "attack": 110,
+        "defense": 80,
+        "specialAttack": 55,
+        "specialDefense": 80,
+        "speed": 105
+      },
+      "total": 500
+    },
+    {
+      "id": 124,
+      "name": "jynx",
+      "height": 14,
+      "weight": 406,
+      "types": ["ice", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "specialAttack": 115,
+        "specialDefense": 95,
+        "speed": 95
+      },
+      "total": 455
+    },
+    {
+      "id": 125,
+      "name": "electabuzz",
+      "height": 11,
+      "weight": 300,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+      "stats": {
+        "hp": 65,
+        "attack": 83,
+        "defense": 57,
+        "specialAttack": 95,
+        "specialDefense": 85,
+        "speed": 105
+      },
+      "total": 490
+    },
+    {
+      "id": 126,
+      "name": "magmar",
+      "height": 13,
+      "weight": 445,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+      "stats": {
+        "hp": 65,
+        "attack": 95,
+        "defense": 57,
+        "specialAttack": 100,
+        "specialDefense": 85,
+        "speed": 93
+      },
+      "total": 495
+    },
+    {
+      "id": 127,
+      "name": "pinsir",
+      "height": 15,
+      "weight": 550,
+      "types": ["bug"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+      "stats": {
+        "hp": 65,
+        "attack": 125,
+        "defense": 100,
+        "specialAttack": 55,
+        "specialDefense": 70,
+        "speed": 85
+      },
+      "total": 500
+    },
+    {
+      "id": 128,
+      "name": "tauros",
+      "height": 14,
+      "weight": 884,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 95,
+        "specialAttack": 40,
+        "specialDefense": 70,
+        "speed": 110
+      },
+      "total": 490
+    },
+    {
+      "id": 129,
+      "name": "magikarp",
+      "height": 9,
+      "weight": 100,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+      "stats": {
+        "hp": 20,
+        "attack": 10,
+        "defense": 55,
+        "specialAttack": 15,
+        "specialDefense": 20,
+        "speed": 80
+      },
+      "total": 200
+    },
+    {
+      "id": 130,
+      "name": "gyarados",
+      "height": 65,
+      "weight": 2350,
+      "types": ["water", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+      "stats": {
+        "hp": 95,
+        "attack": 125,
+        "defense": 79,
+        "specialAttack": 60,
+        "specialDefense": 100,
+        "speed": 81
+      },
+      "total": 540
+    },
+    {
+      "id": 131,
+      "name": "lapras",
+      "height": 25,
+      "weight": 2200,
+      "types": ["water", "ice"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "specialAttack": 85,
+        "specialDefense": 95,
+        "speed": 60
+      },
+      "total": 535
+    },
+    {
+      "id": 132,
+      "name": "ditto",
+      "height": 3,
+      "weight": 40,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+      "stats": {
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "specialAttack": 48,
+        "specialDefense": 48,
+        "speed": 48
+      },
+      "total": 288
+    },
+    {
+      "id": 133,
+      "name": "eevee",
+      "height": 3,
+      "weight": 65,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+      "stats": {
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "specialAttack": 45,
+        "specialDefense": 65,
+        "speed": 55
+      },
+      "total": 325
+    },
+    {
+      "id": 134,
+      "name": "vaporeon",
+      "height": 10,
+      "weight": 290,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+      "stats": {
+        "hp": 130,
+        "attack": 65,
+        "defense": 60,
+        "specialAttack": 110,
+        "specialDefense": 95,
+        "speed": 65
+      },
+      "total": 525
+    },
+    {
+      "id": 135,
+      "name": "jolteon",
+      "height": 8,
+      "weight": 245,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "specialAttack": 110,
+        "specialDefense": 95,
+        "speed": 130
+      },
+      "total": 525
+    },
+    {
+      "id": 136,
+      "name": "flareon",
+      "height": 9,
+      "weight": 250,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+      "stats": {
+        "hp": 65,
+        "attack": 130,
+        "defense": 60,
+        "specialAttack": 95,
+        "specialDefense": 110,
+        "speed": 65
+      },
+      "total": 525
+    },
+    {
+      "id": 137,
+      "name": "porygon",
+      "height": 8,
+      "weight": 365,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+      "stats": {
+        "hp": 65,
+        "attack": 60,
+        "defense": 70,
+        "specialAttack": 85,
+        "specialDefense": 75,
+        "speed": 40
+      },
+      "total": 395
+    },
+    {
+      "id": 138,
+      "name": "omanyte",
+      "height": 4,
+      "weight": 75,
+      "types": ["rock", "water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+      "stats": {
+        "hp": 35,
+        "attack": 40,
+        "defense": 100,
+        "specialAttack": 90,
+        "specialDefense": 55,
+        "speed": 35
+      },
+      "total": 355
+    },
+    {
+      "id": 139,
+      "name": "omastar",
+      "height": 10,
+      "weight": 350,
+      "types": ["rock", "water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+      "stats": {
+        "hp": 70,
+        "attack": 60,
+        "defense": 125,
+        "specialAttack": 115,
+        "specialDefense": 70,
+        "speed": 55
+      },
+      "total": 495
+    },
+    {
+      "id": 140,
+      "name": "kabuto",
+      "height": 5,
+      "weight": 115,
+      "types": ["rock", "water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+      "stats": {
+        "hp": 30,
+        "attack": 80,
+        "defense": 90,
+        "specialAttack": 55,
+        "specialDefense": 45,
+        "speed": 55
+      },
+      "total": 355
+    },
+    {
+      "id": 141,
+      "name": "kabutops",
+      "height": 13,
+      "weight": 405,
+      "types": ["rock", "water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+      "stats": {
+        "hp": 60,
+        "attack": 115,
+        "defense": 105,
+        "specialAttack": 65,
+        "specialDefense": 70,
+        "speed": 80
+      },
+      "total": 495
+    },
+    {
+      "id": 142,
+      "name": "aerodactyl",
+      "height": 18,
+      "weight": 590,
+      "types": ["rock", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+      "stats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "specialAttack": 60,
+        "specialDefense": 75,
+        "speed": 130
+      },
+      "total": 515
+    },
+    {
+      "id": 143,
+      "name": "snorlax",
+      "height": 21,
+      "weight": 4600,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+      "stats": {
+        "hp": 160,
+        "attack": 110,
+        "defense": 65,
+        "specialAttack": 65,
+        "specialDefense": 110,
+        "speed": 30
+      },
+      "total": 540
+    },
+    {
+      "id": 144,
+      "name": "articuno",
+      "height": 17,
+      "weight": 554,
+      "types": ["ice", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "specialAttack": 95,
+        "specialDefense": 125,
+        "speed": 85
+      },
+      "total": 580
+    },
+    {
+      "id": 145,
+      "name": "zapdos",
+      "height": 16,
+      "weight": 526,
+      "types": ["electric", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+      "stats": {
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "specialAttack": 125,
+        "specialDefense": 90,
+        "speed": 100
+      },
+      "total": 580
+    },
+    {
+      "id": 146,
+      "name": "moltres",
+      "height": 20,
+      "weight": 600,
+      "types": ["fire", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "specialAttack": 125,
+        "specialDefense": 85,
+        "speed": 90
+      },
+      "total": 580
+    },
+    {
+      "id": 147,
+      "name": "dratini",
+      "height": 18,
+      "weight": 33,
+      "types": ["dragon"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+      "stats": {
+        "hp": 41,
+        "attack": 64,
+        "defense": 45,
+        "specialAttack": 50,
+        "specialDefense": 50,
+        "speed": 50
+      },
+      "total": 300
+    },
+    {
+      "id": 148,
+      "name": "dragonair",
+      "height": 40,
+      "weight": 165,
+      "types": ["dragon"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+      "stats": {
+        "hp": 61,
+        "attack": 84,
+        "defense": 65,
+        "specialAttack": 70,
+        "specialDefense": 70,
+        "speed": 70
+      },
+      "total": 420
+    },
+    {
+      "id": 149,
+      "name": "dragonite",
+      "height": 22,
+      "weight": 2100,
+      "types": ["dragon", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+      "stats": {
+        "hp": 91,
+        "attack": 134,
+        "defense": 95,
+        "specialAttack": 100,
+        "specialDefense": 100,
+        "speed": 80
+      },
+      "total": 600
+    },
+    {
+      "id": 150,
+      "name": "mewtwo",
+      "height": 20,
+      "weight": 1220,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "stats": {
+        "hp": 106,
+        "attack": 110,
+        "defense": 90,
+        "specialAttack": 154,
+        "specialDefense": 90,
+        "speed": 130
+      },
+      "total": 680
+    },
+    {
+      "id": 151,
+      "name": "mew",
+      "height": 4,
+      "weight": 40,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "specialAttack": 100,
+        "specialDefense": 100,
+        "speed": 100
+      },
+      "total": 600
+    },
+    {
+      "id": 152,
+      "name": "chikorita",
+      "height": 9,
+      "weight": 64,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+      "stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 65,
+        "specialAttack": 49,
+        "specialDefense": 65,
+        "speed": 45
+      },
+      "total": 318
+    },
+    {
+      "id": 153,
+      "name": "bayleef",
+      "height": 12,
+      "weight": 158,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+      "stats": {
+        "hp": 60,
+        "attack": 62,
+        "defense": 80,
+        "specialAttack": 63,
+        "specialDefense": 80,
+        "speed": 60
+      },
+      "total": 405
+    },
+    {
+      "id": 154,
+      "name": "meganium",
+      "height": 18,
+      "weight": 1005,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 100,
+        "specialAttack": 83,
+        "specialDefense": 100,
+        "speed": 80
+      },
+      "total": 525
+    },
+    {
+      "id": 155,
+      "name": "cyndaquil",
+      "height": 5,
+      "weight": 79,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
+      "stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "specialAttack": 60,
+        "specialDefense": 50,
+        "speed": 65
+      },
+      "total": 309
+    },
+    {
+      "id": 156,
+      "name": "quilava",
+      "height": 9,
+      "weight": 190,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "specialAttack": 80,
+        "specialDefense": 65,
+        "speed": 80
+      },
+      "total": 405
+    },
+    {
+      "id": 157,
+      "name": "typhlosion",
+      "height": 17,
+      "weight": 795,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+      "stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "specialAttack": 109,
+        "specialDefense": 85,
+        "speed": 100
+      },
+      "total": 534
+    },
+    {
+      "id": 158,
+      "name": "totodile",
+      "height": 6,
+      "weight": 95,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 64,
+        "specialAttack": 44,
+        "specialDefense": 48,
+        "speed": 43
+      },
+      "total": 314
+    },
+    {
+      "id": 159,
+      "name": "croconaw",
+      "height": 11,
+      "weight": 250,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+      "stats": {
+        "hp": 65,
+        "attack": 80,
+        "defense": 80,
+        "specialAttack": 59,
+        "specialDefense": 63,
+        "speed": 58
+      },
+      "total": 405
+    },
+    {
+      "id": 160,
+      "name": "feraligatr",
+      "height": 23,
+      "weight": 888,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 100,
+        "specialAttack": 79,
+        "specialDefense": 83,
+        "speed": 78
+      },
+      "total": 530
+    },
+    {
+      "id": 161,
+      "name": "sentret",
+      "height": 8,
+      "weight": 60,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+      "stats": {
+        "hp": 35,
+        "attack": 46,
+        "defense": 34,
+        "specialAttack": 35,
+        "specialDefense": 45,
+        "speed": 20
+      },
+      "total": 215
+    },
+    {
+      "id": 162,
+      "name": "furret",
+      "height": 18,
+      "weight": 325,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+      "stats": {
+        "hp": 85,
+        "attack": 76,
+        "defense": 64,
+        "specialAttack": 45,
+        "specialDefense": 55,
+        "speed": 90
+      },
+      "total": 415
+    },
+    {
+      "id": 163,
+      "name": "hoothoot",
+      "height": 7,
+      "weight": 212,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
+      "stats": {
+        "hp": 60,
+        "attack": 30,
+        "defense": 30,
+        "specialAttack": 36,
+        "specialDefense": 56,
+        "speed": 50
+      },
+      "total": 262
+    },
+    {
+      "id": 164,
+      "name": "noctowl",
+      "height": 16,
+      "weight": 408,
+      "types": ["normal", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
+      "stats": {
+        "hp": 100,
+        "attack": 50,
+        "defense": 50,
+        "specialAttack": 86,
+        "specialDefense": 96,
+        "speed": 70
+      },
+      "total": 452
+    },
+    {
+      "id": 165,
+      "name": "ledyba",
+      "height": 10,
+      "weight": 108,
+      "types": ["bug", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+      "stats": {
+        "hp": 40,
+        "attack": 20,
+        "defense": 30,
+        "specialAttack": 40,
+        "specialDefense": 80,
+        "speed": 55
+      },
+      "total": 265
+    },
+    {
+      "id": 166,
+      "name": "ledian",
+      "height": 14,
+      "weight": 356,
+      "types": ["bug", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
+      "stats": {
+        "hp": 55,
+        "attack": 35,
+        "defense": 50,
+        "specialAttack": 55,
+        "specialDefense": 110,
+        "speed": 85
+      },
+      "total": 390
+    },
+    {
+      "id": 167,
+      "name": "spinarak",
+      "height": 5,
+      "weight": 85,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
+      "stats": {
+        "hp": 40,
+        "attack": 60,
+        "defense": 40,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 30
+      },
+      "total": 250
+    },
+    {
+      "id": 168,
+      "name": "ariados",
+      "height": 11,
+      "weight": 335,
+      "types": ["bug", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+      "stats": {
+        "hp": 70,
+        "attack": 90,
+        "defense": 70,
+        "specialAttack": 60,
+        "specialDefense": 70,
+        "speed": 40
+      },
+      "total": 400
+    },
+    {
+      "id": 169,
+      "name": "crobat",
+      "height": 18,
+      "weight": 750,
+      "types": ["poison", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
+      "stats": {
+        "hp": 85,
+        "attack": 90,
+        "defense": 80,
+        "specialAttack": 70,
+        "specialDefense": 80,
+        "speed": 130
+      },
+      "total": 535
+    },
+    {
+      "id": 170,
+      "name": "chinchou",
+      "height": 5,
+      "weight": 120,
+      "types": ["water", "electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
+      "stats": {
+        "hp": 75,
+        "attack": 38,
+        "defense": 38,
+        "specialAttack": 56,
+        "specialDefense": 56,
+        "speed": 67
+      },
+      "total": 330
+    },
+    {
+      "id": 171,
+      "name": "lanturn",
+      "height": 12,
+      "weight": 225,
+      "types": ["water", "electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
+      "stats": {
+        "hp": 125,
+        "attack": 58,
+        "defense": 58,
+        "specialAttack": 76,
+        "specialDefense": 76,
+        "speed": 67
+      },
+      "total": 460
+    },
+    {
+      "id": 172,
+      "name": "pichu",
+      "height": 3,
+      "weight": 20,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+      "stats": {
+        "hp": 20,
+        "attack": 40,
+        "defense": 15,
+        "specialAttack": 35,
+        "specialDefense": 35,
+        "speed": 60
+      },
+      "total": 205
+    },
+    {
+      "id": 173,
+      "name": "cleffa",
+      "height": 3,
+      "weight": 30,
+      "types": ["fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
+      "stats": {
+        "hp": 50,
+        "attack": 25,
+        "defense": 28,
+        "specialAttack": 45,
+        "specialDefense": 55,
+        "speed": 15
+      },
+      "total": 218
+    },
+    {
+      "id": 174,
+      "name": "igglybuff",
+      "height": 3,
+      "weight": 10,
+      "types": ["normal", "fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+      "stats": {
+        "hp": 90,
+        "attack": 30,
+        "defense": 15,
+        "specialAttack": 40,
+        "specialDefense": 20,
+        "speed": 15
+      },
+      "total": 210
+    },
+    {
+      "id": 175,
+      "name": "togepi",
+      "height": 3,
+      "weight": 15,
+      "types": ["fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+      "stats": {
+        "hp": 35,
+        "attack": 20,
+        "defense": 65,
+        "specialAttack": 40,
+        "specialDefense": 65,
+        "speed": 20
+      },
+      "total": 245
+    },
+    {
+      "id": 176,
+      "name": "togetic",
+      "height": 6,
+      "weight": 32,
+      "types": ["fairy", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+      "stats": {
+        "hp": 55,
+        "attack": 40,
+        "defense": 85,
+        "specialAttack": 80,
+        "specialDefense": 105,
+        "speed": 40
+      },
+      "total": 405
+    },
+    {
+      "id": 177,
+      "name": "natu",
+      "height": 2,
+      "weight": 20,
+      "types": ["psychic", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+      "stats": {
+        "hp": 40,
+        "attack": 50,
+        "defense": 45,
+        "specialAttack": 70,
+        "specialDefense": 45,
+        "speed": 70
+      },
+      "total": 320
+    },
+    {
+      "id": 178,
+      "name": "xatu",
+      "height": 15,
+      "weight": 150,
+      "types": ["psychic", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+      "stats": {
+        "hp": 65,
+        "attack": 75,
+        "defense": 70,
+        "specialAttack": 95,
+        "specialDefense": 70,
+        "speed": 95
+      },
+      "total": 470
+    },
+    {
+      "id": 179,
+      "name": "mareep",
+      "height": 6,
+      "weight": 78,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
+      "stats": {
+        "hp": 55,
+        "attack": 40,
+        "defense": 40,
+        "specialAttack": 65,
+        "specialDefense": 45,
+        "speed": 35
+      },
+      "total": 280
+    },
+    {
+      "id": 180,
+      "name": "flaaffy",
+      "height": 8,
+      "weight": 133,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+      "stats": {
+        "hp": 70,
+        "attack": 55,
+        "defense": 55,
+        "specialAttack": 80,
+        "specialDefense": 60,
+        "speed": 45
+      },
+      "total": 365
+    },
+    {
+      "id": 181,
+      "name": "ampharos",
+      "height": 14,
+      "weight": 615,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+      "stats": {
+        "hp": 90,
+        "attack": 75,
+        "defense": 85,
+        "specialAttack": 115,
+        "specialDefense": 90,
+        "speed": 55
+      },
+      "total": 510
+    },
+    {
+      "id": 182,
+      "name": "bellossom",
+      "height": 4,
+      "weight": 58,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 95,
+        "specialAttack": 90,
+        "specialDefense": 100,
+        "speed": 50
+      },
+      "total": 490
+    },
+    {
+      "id": 183,
+      "name": "marill",
+      "height": 4,
+      "weight": 85,
+      "types": ["water", "fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+      "stats": {
+        "hp": 70,
+        "attack": 20,
+        "defense": 50,
+        "specialAttack": 20,
+        "specialDefense": 50,
+        "speed": 40
+      },
+      "total": 250
+    },
+    {
+      "id": 184,
+      "name": "azumarill",
+      "height": 8,
+      "weight": 285,
+      "types": ["water", "fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
+      "stats": {
+        "hp": 100,
+        "attack": 50,
+        "defense": 80,
+        "specialAttack": 60,
+        "specialDefense": 80,
+        "speed": 50
+      },
+      "total": 420
+    },
+    {
+      "id": 185,
+      "name": "sudowoodo",
+      "height": 12,
+      "weight": 380,
+      "types": ["rock"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+      "stats": {
+        "hp": 70,
+        "attack": 100,
+        "defense": 115,
+        "specialAttack": 30,
+        "specialDefense": 65,
+        "speed": 30
+      },
+      "total": 410
+    },
+    {
+      "id": 186,
+      "name": "politoed",
+      "height": 11,
+      "weight": 339,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
+      "stats": {
+        "hp": 90,
+        "attack": 75,
+        "defense": 75,
+        "specialAttack": 90,
+        "specialDefense": 100,
+        "speed": 70
+      },
+      "total": 500
+    },
+    {
+      "id": 187,
+      "name": "hoppip",
+      "height": 4,
+      "weight": 5,
+      "types": ["grass", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+      "stats": {
+        "hp": 35,
+        "attack": 35,
+        "defense": 40,
+        "specialAttack": 35,
+        "specialDefense": 55,
+        "speed": 50
+      },
+      "total": 250
+    },
+    {
+      "id": 188,
+      "name": "skiploom",
+      "height": 6,
+      "weight": 10,
+      "types": ["grass", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
+      "stats": {
+        "hp": 55,
+        "attack": 45,
+        "defense": 50,
+        "specialAttack": 45,
+        "specialDefense": 65,
+        "speed": 80
+      },
+      "total": 340
+    },
+    {
+      "id": 189,
+      "name": "jumpluff",
+      "height": 8,
+      "weight": 30,
+      "types": ["grass", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+      "stats": {
+        "hp": 75,
+        "attack": 55,
+        "defense": 70,
+        "specialAttack": 55,
+        "specialDefense": 95,
+        "speed": 110
+      },
+      "total": 460
+    },
+    {
+      "id": 190,
+      "name": "aipom",
+      "height": 8,
+      "weight": 115,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
+      "stats": {
+        "hp": 55,
+        "attack": 70,
+        "defense": 55,
+        "specialAttack": 40,
+        "specialDefense": 55,
+        "speed": 85
+      },
+      "total": 360
+    },
+    {
+      "id": 191,
+      "name": "sunkern",
+      "height": 3,
+      "weight": 18,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
+      "stats": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "specialAttack": 30,
+        "specialDefense": 30,
+        "speed": 30
+      },
+      "total": 180
+    },
+    {
+      "id": 192,
+      "name": "sunflora",
+      "height": 8,
+      "weight": 85,
+      "types": ["grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+      "stats": {
+        "hp": 75,
+        "attack": 75,
+        "defense": 55,
+        "specialAttack": 105,
+        "specialDefense": 85,
+        "speed": 30
+      },
+      "total": 425
+    },
+    {
+      "id": 193,
+      "name": "yanma",
+      "height": 12,
+      "weight": 380,
+      "types": ["bug", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 45,
+        "specialAttack": 75,
+        "specialDefense": 45,
+        "speed": 95
+      },
+      "total": 390
+    },
+    {
+      "id": 194,
+      "name": "wooper",
+      "height": 4,
+      "weight": 85,
+      "types": ["water", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+      "stats": {
+        "hp": 55,
+        "attack": 45,
+        "defense": 45,
+        "specialAttack": 25,
+        "specialDefense": 25,
+        "speed": 15
+      },
+      "total": 210
+    },
+    {
+      "id": 195,
+      "name": "quagsire",
+      "height": 14,
+      "weight": 750,
+      "types": ["water", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+      "stats": {
+        "hp": 95,
+        "attack": 85,
+        "defense": 85,
+        "specialAttack": 65,
+        "specialDefense": 65,
+        "speed": 35
+      },
+      "total": 430
+    },
+    {
+      "id": 196,
+      "name": "espeon",
+      "height": 9,
+      "weight": 265,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "specialAttack": 130,
+        "specialDefense": 95,
+        "speed": 110
+      },
+      "total": 525
+    },
+    {
+      "id": 197,
+      "name": "umbreon",
+      "height": 10,
+      "weight": 270,
+      "types": ["dark"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+      "stats": {
+        "hp": 95,
+        "attack": 65,
+        "defense": 110,
+        "specialAttack": 60,
+        "specialDefense": 130,
+        "speed": 65
+      },
+      "total": 525
+    },
+    {
+      "id": 198,
+      "name": "murkrow",
+      "height": 5,
+      "weight": 21,
+      "types": ["dark", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+      "stats": {
+        "hp": 60,
+        "attack": 85,
+        "defense": 42,
+        "specialAttack": 85,
+        "specialDefense": 42,
+        "speed": 91
+      },
+      "total": 405
+    },
+    {
+      "id": 199,
+      "name": "slowking",
+      "height": 20,
+      "weight": 795,
+      "types": ["water", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+      "stats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 80,
+        "specialAttack": 100,
+        "specialDefense": 110,
+        "speed": 30
+      },
+      "total": 490
+    },
+    {
+      "id": 200,
+      "name": "misdreavus",
+      "height": 7,
+      "weight": 10,
+      "types": ["ghost"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "specialAttack": 85,
+        "specialDefense": 85,
+        "speed": 85
+      },
+      "total": 435
+    },
+    {
+      "id": 201,
+      "name": "unown",
+      "height": 5,
+      "weight": 50,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+      "stats": {
+        "hp": 48,
+        "attack": 72,
+        "defense": 48,
+        "specialAttack": 72,
+        "specialDefense": 48,
+        "speed": 48
+      },
+      "total": 336
+    },
+    {
+      "id": 202,
+      "name": "wobbuffet",
+      "height": 13,
+      "weight": 285,
+      "types": ["psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+      "stats": {
+        "hp": 190,
+        "attack": 33,
+        "defense": 58,
+        "specialAttack": 33,
+        "specialDefense": 58,
+        "speed": 33
+      },
+      "total": 405
+    },
+    {
+      "id": 203,
+      "name": "girafarig",
+      "height": 15,
+      "weight": 415,
+      "types": ["normal", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 65,
+        "specialAttack": 90,
+        "specialDefense": 65,
+        "speed": 85
+      },
+      "total": 455
+    },
+    {
+      "id": 204,
+      "name": "pineco",
+      "height": 6,
+      "weight": 72,
+      "types": ["bug"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 90,
+        "specialAttack": 35,
+        "specialDefense": 35,
+        "speed": 15
+      },
+      "total": 290
+    },
+    {
+      "id": 205,
+      "name": "forretress",
+      "height": 12,
+      "weight": 1258,
+      "types": ["bug", "steel"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+      "stats": {
+        "hp": 75,
+        "attack": 90,
+        "defense": 140,
+        "specialAttack": 60,
+        "specialDefense": 60,
+        "speed": 40
+      },
+      "total": 465
+    },
+    {
+      "id": 206,
+      "name": "dunsparce",
+      "height": 15,
+      "weight": 140,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "stats": {
+        "hp": 100,
+        "attack": 70,
+        "defense": 70,
+        "specialAttack": 65,
+        "specialDefense": 65,
+        "speed": 45
+      },
+      "total": 415
+    },
+    {
+      "id": 207,
+      "name": "gligar",
+      "height": 11,
+      "weight": 648,
+      "types": ["ground", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+      "stats": {
+        "hp": 65,
+        "attack": 75,
+        "defense": 105,
+        "specialAttack": 35,
+        "specialDefense": 65,
+        "speed": 85
+      },
+      "total": 430
+    },
+    {
+      "id": 208,
+      "name": "steelix",
+      "height": 92,
+      "weight": 4000,
+      "types": ["steel", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
+      "stats": {
+        "hp": 75,
+        "attack": 85,
+        "defense": 200,
+        "specialAttack": 55,
+        "specialDefense": 65,
+        "speed": 30
+      },
+      "total": 510
+    },
+    {
+      "id": 209,
+      "name": "snubbull",
+      "height": 6,
+      "weight": 78,
+      "types": ["fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 50,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 30
+      },
+      "total": 300
+    },
+    {
+      "id": 210,
+      "name": "granbull",
+      "height": 14,
+      "weight": 487,
+      "types": ["fairy"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+      "stats": {
+        "hp": 90,
+        "attack": 120,
+        "defense": 75,
+        "specialAttack": 60,
+        "specialDefense": 60,
+        "speed": 45
+      },
+      "total": 450
+    },
+    {
+      "id": 211,
+      "name": "qwilfish",
+      "height": 5,
+      "weight": 39,
+      "types": ["water", "poison"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+      "stats": {
+        "hp": 65,
+        "attack": 95,
+        "defense": 85,
+        "specialAttack": 55,
+        "specialDefense": 55,
+        "speed": 85
+      },
+      "total": 440
+    },
+    {
+      "id": 212,
+      "name": "scizor",
+      "height": 18,
+      "weight": 1180,
+      "types": ["bug", "steel"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
+      "stats": {
+        "hp": 70,
+        "attack": 130,
+        "defense": 100,
+        "specialAttack": 55,
+        "specialDefense": 80,
+        "speed": 65
+      },
+      "total": 500
+    },
+    {
+      "id": 213,
+      "name": "shuckle",
+      "height": 6,
+      "weight": 205,
+      "types": ["bug", "rock"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+      "stats": {
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "specialAttack": 10,
+        "specialDefense": 230,
+        "speed": 5
+      },
+      "total": 505
+    },
+    {
+      "id": 214,
+      "name": "heracross",
+      "height": 15,
+      "weight": 540,
+      "types": ["bug", "fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+      "stats": {
+        "hp": 80,
+        "attack": 125,
+        "defense": 75,
+        "specialAttack": 40,
+        "specialDefense": 95,
+        "speed": 85
+      },
+      "total": 500
+    },
+    {
+      "id": 215,
+      "name": "sneasel",
+      "height": 9,
+      "weight": 280,
+      "types": ["dark", "ice"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 55,
+        "specialAttack": 35,
+        "specialDefense": 75,
+        "speed": 115
+      },
+      "total": 430
+    },
+    {
+      "id": 216,
+      "name": "teddiursa",
+      "height": 6,
+      "weight": 88,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 50,
+        "specialAttack": 50,
+        "specialDefense": 50,
+        "speed": 40
+      },
+      "total": 330
+    },
+    {
+      "id": 217,
+      "name": "ursaring",
+      "height": 18,
+      "weight": 1258,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
+      "stats": {
+        "hp": 90,
+        "attack": 130,
+        "defense": 75,
+        "specialAttack": 75,
+        "specialDefense": 75,
+        "speed": 55
+      },
+      "total": 500
+    },
+    {
+      "id": 218,
+      "name": "slugma",
+      "height": 7,
+      "weight": 350,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
+      "stats": {
+        "hp": 40,
+        "attack": 40,
+        "defense": 40,
+        "specialAttack": 70,
+        "specialDefense": 40,
+        "speed": 20
+      },
+      "total": 250
+    },
+    {
+      "id": 219,
+      "name": "magcargo",
+      "height": 8,
+      "weight": 550,
+      "types": ["fire", "rock"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+      "stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 120,
+        "specialAttack": 90,
+        "specialDefense": 80,
+        "speed": 30
+      },
+      "total": 430
+    },
+    {
+      "id": 220,
+      "name": "swinub",
+      "height": 4,
+      "weight": 65,
+      "types": ["ice", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+      "stats": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 40,
+        "specialAttack": 30,
+        "specialDefense": 30,
+        "speed": 50
+      },
+      "total": 250
+    },
+    {
+      "id": 221,
+      "name": "piloswine",
+      "height": 11,
+      "weight": 558,
+      "types": ["ice", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 80,
+        "specialAttack": 60,
+        "specialDefense": 60,
+        "speed": 50
+      },
+      "total": 450
+    },
+    {
+      "id": 222,
+      "name": "corsola",
+      "height": 6,
+      "weight": 50,
+      "types": ["water", "rock"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+      "stats": {
+        "hp": 65,
+        "attack": 55,
+        "defense": 95,
+        "specialAttack": 65,
+        "specialDefense": 95,
+        "speed": 35
+      },
+      "total": 410
+    },
+    {
+      "id": 223,
+      "name": "remoraid",
+      "height": 6,
+      "weight": 120,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
+      "stats": {
+        "hp": 35,
+        "attack": 65,
+        "defense": 35,
+        "specialAttack": 65,
+        "specialDefense": 35,
+        "speed": 65
+      },
+      "total": 300
+    },
+    {
+      "id": 224,
+      "name": "octillery",
+      "height": 9,
+      "weight": 285,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
+      "stats": {
+        "hp": 75,
+        "attack": 105,
+        "defense": 75,
+        "specialAttack": 105,
+        "specialDefense": 75,
+        "speed": 45
+      },
+      "total": 480
+    },
+    {
+      "id": 225,
+      "name": "delibird",
+      "height": 9,
+      "weight": 160,
+      "types": ["ice", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
+      "stats": {
+        "hp": 45,
+        "attack": 55,
+        "defense": 45,
+        "specialAttack": 65,
+        "specialDefense": 45,
+        "speed": 75
+      },
+      "total": 330
+    },
+    {
+      "id": 226,
+      "name": "mantine",
+      "height": 21,
+      "weight": 2200,
+      "types": ["water", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
+      "stats": {
+        "hp": 85,
+        "attack": 40,
+        "defense": 70,
+        "specialAttack": 80,
+        "specialDefense": 140,
+        "speed": 70
+      },
+      "total": 485
+    },
+    {
+      "id": 227,
+      "name": "skarmory",
+      "height": 17,
+      "weight": 505,
+      "types": ["steel", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+      "stats": {
+        "hp": 65,
+        "attack": 80,
+        "defense": 140,
+        "specialAttack": 40,
+        "specialDefense": 70,
+        "speed": 70
+      },
+      "total": 465
+    },
+    {
+      "id": 228,
+      "name": "houndour",
+      "height": 6,
+      "weight": 108,
+      "types": ["dark", "fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
+      "stats": {
+        "hp": 45,
+        "attack": 60,
+        "defense": 30,
+        "specialAttack": 80,
+        "specialDefense": 50,
+        "speed": 65
+      },
+      "total": 330
+    },
+    {
+      "id": 229,
+      "name": "houndoom",
+      "height": 14,
+      "weight": 350,
+      "types": ["dark", "fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
+      "stats": {
+        "hp": 75,
+        "attack": 90,
+        "defense": 50,
+        "specialAttack": 110,
+        "specialDefense": 80,
+        "speed": 95
+      },
+      "total": 500
+    },
+    {
+      "id": 230,
+      "name": "kingdra",
+      "height": 18,
+      "weight": 1520,
+      "types": ["water", "dragon"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
+      "stats": {
+        "hp": 75,
+        "attack": 95,
+        "defense": 95,
+        "specialAttack": 95,
+        "specialDefense": 95,
+        "speed": 85
+      },
+      "total": 540
+    },
+    {
+      "id": 231,
+      "name": "phanpy",
+      "height": 5,
+      "weight": 335,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+      "stats": {
+        "hp": 90,
+        "attack": 60,
+        "defense": 60,
+        "specialAttack": 40,
+        "specialDefense": 40,
+        "speed": 40
+      },
+      "total": 330
+    },
+    {
+      "id": 232,
+      "name": "donphan",
+      "height": 11,
+      "weight": 1200,
+      "types": ["ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
+      "stats": {
+        "hp": 90,
+        "attack": 120,
+        "defense": 120,
+        "specialAttack": 60,
+        "specialDefense": 60,
+        "speed": 50
+      },
+      "total": 500
+    },
+    {
+      "id": 233,
+      "name": "porygon2",
+      "height": 6,
+      "weight": 325,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
+      "stats": {
+        "hp": 85,
+        "attack": 80,
+        "defense": 90,
+        "specialAttack": 105,
+        "specialDefense": 95,
+        "speed": 60
+      },
+      "total": 515
+    },
+    {
+      "id": 234,
+      "name": "stantler",
+      "height": 14,
+      "weight": 712,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+      "stats": {
+        "hp": 73,
+        "attack": 95,
+        "defense": 62,
+        "specialAttack": 85,
+        "specialDefense": 65,
+        "speed": 85
+      },
+      "total": 465
+    },
+    {
+      "id": 235,
+      "name": "smeargle",
+      "height": 12,
+      "weight": 580,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+      "stats": {
+        "hp": 55,
+        "attack": 20,
+        "defense": 35,
+        "specialAttack": 20,
+        "specialDefense": 45,
+        "speed": 75
+      },
+      "total": 250
+    },
+    {
+      "id": 236,
+      "name": "tyrogue",
+      "height": 7,
+      "weight": 210,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
+      "stats": {
+        "hp": 35,
+        "attack": 35,
+        "defense": 35,
+        "specialAttack": 35,
+        "specialDefense": 35,
+        "speed": 35
+      },
+      "total": 210
+    },
+    {
+      "id": 237,
+      "name": "hitmontop",
+      "height": 14,
+      "weight": 480,
+      "types": ["fighting"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 95,
+        "specialAttack": 35,
+        "specialDefense": 110,
+        "speed": 70
+      },
+      "total": 455
+    },
+    {
+      "id": 238,
+      "name": "smoochum",
+      "height": 4,
+      "weight": 60,
+      "types": ["ice", "psychic"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
+      "stats": {
+        "hp": 45,
+        "attack": 30,
+        "defense": 15,
+        "specialAttack": 85,
+        "specialDefense": 65,
+        "speed": 65
+      },
+      "total": 305
+    },
+    {
+      "id": 239,
+      "name": "elekid",
+      "height": 6,
+      "weight": 235,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+      "stats": {
+        "hp": 45,
+        "attack": 63,
+        "defense": 37,
+        "specialAttack": 65,
+        "specialDefense": 55,
+        "speed": 95
+      },
+      "total": 360
+    },
+    {
+      "id": 240,
+      "name": "magby",
+      "height": 7,
+      "weight": 214,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+      "stats": {
+        "hp": 45,
+        "attack": 75,
+        "defense": 37,
+        "specialAttack": 70,
+        "specialDefense": 55,
+        "speed": 83
+      },
+      "total": 365
+    },
+    {
+      "id": 241,
+      "name": "miltank",
+      "height": 12,
+      "weight": 755,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
+      "stats": {
+        "hp": 95,
+        "attack": 80,
+        "defense": 105,
+        "specialAttack": 40,
+        "specialDefense": 70,
+        "speed": 100
+      },
+      "total": 490
+    },
+    {
+      "id": 242,
+      "name": "blissey",
+      "height": 15,
+      "weight": 468,
+      "types": ["normal"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+      "stats": {
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "specialAttack": 75,
+        "specialDefense": 135,
+        "speed": 55
+      },
+      "total": 540
+    },
+    {
+      "id": 243,
+      "name": "raikou",
+      "height": 19,
+      "weight": 1780,
+      "types": ["electric"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 75,
+        "specialAttack": 115,
+        "specialDefense": 100,
+        "speed": 115
+      },
+      "total": 580
+    },
+    {
+      "id": 244,
+      "name": "entei",
+      "height": 21,
+      "weight": 1980,
+      "types": ["fire"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+      "stats": {
+        "hp": 115,
+        "attack": 115,
+        "defense": 85,
+        "specialAttack": 90,
+        "specialDefense": 75,
+        "speed": 100
+      },
+      "total": 580
+    },
+    {
+      "id": 245,
+      "name": "suicune",
+      "height": 20,
+      "weight": 1870,
+      "types": ["water"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+      "stats": {
+        "hp": 100,
+        "attack": 75,
+        "defense": 115,
+        "specialAttack": 90,
+        "specialDefense": 115,
+        "speed": 85
+      },
+      "total": 580
+    },
+    {
+      "id": 246,
+      "name": "larvitar",
+      "height": 6,
+      "weight": 720,
+      "types": ["rock", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+      "stats": {
+        "hp": 50,
+        "attack": 64,
+        "defense": 50,
+        "specialAttack": 45,
+        "specialDefense": 50,
+        "speed": 41
+      },
+      "total": 300
+    },
+    {
+      "id": 247,
+      "name": "pupitar",
+      "height": 12,
+      "weight": 1520,
+      "types": ["rock", "ground"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+      "stats": {
+        "hp": 70,
+        "attack": 84,
+        "defense": 70,
+        "specialAttack": 65,
+        "specialDefense": 70,
+        "speed": 51
+      },
+      "total": 410
+    },
+    {
+      "id": 248,
+      "name": "tyranitar",
+      "height": 20,
+      "weight": 2020,
+      "types": ["rock", "dark"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+      "stats": {
+        "hp": 100,
+        "attack": 134,
+        "defense": 110,
+        "specialAttack": 95,
+        "specialDefense": 100,
+        "speed": 61
+      },
+      "total": 600
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "height": 52,
+      "weight": 2160,
+      "types": ["psychic", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+      "stats": {
+        "hp": 106,
+        "attack": 90,
+        "defense": 130,
+        "specialAttack": 90,
+        "specialDefense": 154,
+        "speed": 110
+      },
+      "total": 680
+    },
+    {
+      "id": 250,
+      "name": "ho-oh",
+      "height": 38,
+      "weight": 1990,
+      "types": ["fire", "flying"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+      "stats": {
+        "hp": 106,
+        "attack": 130,
+        "defense": 90,
+        "specialAttack": 110,
+        "specialDefense": 154,
+        "speed": 90
+      },
+      "total": 680
+    },
+    {
+      "id": 251,
+      "name": "celebi",
+      "height": 6,
+      "weight": 50,
+      "types": ["psychic", "grass"],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "specialAttack": 100,
+        "specialDefense": 100,
+        "speed": 100
+      },
+      "total": 600
+    }
+  ],
+  "abilitiesById": {
+    "1": [
+      { "name": "overgrow", "isHidden": false, "shortEffect": null },
+      { "name": "chlorophyll", "isHidden": true, "shortEffect": null }
+    ],
+    "2": [
+      { "name": "overgrow", "isHidden": false, "shortEffect": null },
+      { "name": "chlorophyll", "isHidden": true, "shortEffect": null }
+    ],
+    "3": [
+      { "name": "overgrow", "isHidden": false, "shortEffect": null },
+      { "name": "chlorophyll", "isHidden": true, "shortEffect": null }
+    ],
+    "4": [
+      { "name": "blaze", "isHidden": false, "shortEffect": null },
+      { "name": "solar-power", "isHidden": true, "shortEffect": null }
+    ],
+    "5": [
+      { "name": "blaze", "isHidden": false, "shortEffect": null },
+      { "name": "solar-power", "isHidden": true, "shortEffect": null }
+    ],
+    "6": [
+      { "name": "blaze", "isHidden": false, "shortEffect": null },
+      { "name": "solar-power", "isHidden": true, "shortEffect": null }
+    ],
+    "7": [
+      { "name": "torrent", "isHidden": false, "shortEffect": null },
+      { "name": "rain-dish", "isHidden": true, "shortEffect": null }
+    ],
+    "8": [
+      { "name": "torrent", "isHidden": false, "shortEffect": null },
+      { "name": "rain-dish", "isHidden": true, "shortEffect": null }
+    ],
+    "9": [
+      { "name": "torrent", "isHidden": false, "shortEffect": null },
+      { "name": "rain-dish", "isHidden": true, "shortEffect": null }
+    ],
+    "10": [
+      { "name": "shield-dust", "isHidden": false, "shortEffect": null },
+      { "name": "run-away", "isHidden": true, "shortEffect": null }
+    ],
+    "11": [{ "name": "shed-skin", "isHidden": false, "shortEffect": null }],
+    "12": [
+      { "name": "compound-eyes", "isHidden": false, "shortEffect": null },
+      { "name": "tinted-lens", "isHidden": true, "shortEffect": null }
+    ],
+    "13": [
+      { "name": "shield-dust", "isHidden": false, "shortEffect": null },
+      { "name": "run-away", "isHidden": true, "shortEffect": null }
+    ],
+    "14": [{ "name": "shed-skin", "isHidden": false, "shortEffect": null }],
+    "15": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": true, "shortEffect": null }
+    ],
+    "16": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "tangled-feet", "isHidden": false, "shortEffect": null },
+      { "name": "big-pecks", "isHidden": true, "shortEffect": null }
+    ],
+    "17": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "tangled-feet", "isHidden": false, "shortEffect": null },
+      { "name": "big-pecks", "isHidden": true, "shortEffect": null }
+    ],
+    "18": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "tangled-feet", "isHidden": false, "shortEffect": null },
+      { "name": "big-pecks", "isHidden": true, "shortEffect": null }
+    ],
+    "19": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": true, "shortEffect": null }
+    ],
+    "20": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": true, "shortEffect": null }
+    ],
+    "21": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": true, "shortEffect": null }
+    ],
+    "22": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": true, "shortEffect": null }
+    ],
+    "23": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "shed-skin", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "24": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "shed-skin", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "25": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": true, "shortEffect": null }
+    ],
+    "26": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": true, "shortEffect": null }
+    ],
+    "27": [
+      { "name": "sand-veil", "isHidden": false, "shortEffect": null },
+      { "name": "sand-rush", "isHidden": true, "shortEffect": null }
+    ],
+    "28": [
+      { "name": "sand-veil", "isHidden": false, "shortEffect": null },
+      { "name": "sand-rush", "isHidden": true, "shortEffect": null }
+    ],
+    "29": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "rivalry", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": true, "shortEffect": null }
+    ],
+    "30": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "rivalry", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": true, "shortEffect": null }
+    ],
+    "31": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "rivalry", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "32": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "rivalry", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": true, "shortEffect": null }
+    ],
+    "33": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "rivalry", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": true, "shortEffect": null }
+    ],
+    "34": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "rivalry", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "35": [
+      { "name": "cute-charm", "isHidden": false, "shortEffect": null },
+      { "name": "magic-guard", "isHidden": false, "shortEffect": null },
+      { "name": "friend-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "36": [
+      { "name": "cute-charm", "isHidden": false, "shortEffect": null },
+      { "name": "magic-guard", "isHidden": false, "shortEffect": null },
+      { "name": "unaware", "isHidden": true, "shortEffect": null }
+    ],
+    "37": [
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "drought", "isHidden": true, "shortEffect": null }
+    ],
+    "38": [
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "drought", "isHidden": true, "shortEffect": null }
+    ],
+    "39": [
+      { "name": "cute-charm", "isHidden": false, "shortEffect": null },
+      { "name": "competitive", "isHidden": false, "shortEffect": null },
+      { "name": "friend-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "40": [
+      { "name": "cute-charm", "isHidden": false, "shortEffect": null },
+      { "name": "competitive", "isHidden": false, "shortEffect": null },
+      { "name": "frisk", "isHidden": true, "shortEffect": null }
+    ],
+    "41": [
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "infiltrator", "isHidden": true, "shortEffect": null }
+    ],
+    "42": [
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "infiltrator", "isHidden": true, "shortEffect": null }
+    ],
+    "43": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "run-away", "isHidden": true, "shortEffect": null }
+    ],
+    "44": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "stench", "isHidden": true, "shortEffect": null }
+    ],
+    "45": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "effect-spore", "isHidden": true, "shortEffect": null }
+    ],
+    "46": [
+      { "name": "effect-spore", "isHidden": false, "shortEffect": null },
+      { "name": "dry-skin", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": true, "shortEffect": null }
+    ],
+    "47": [
+      { "name": "effect-spore", "isHidden": false, "shortEffect": null },
+      { "name": "dry-skin", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": true, "shortEffect": null }
+    ],
+    "48": [
+      { "name": "compound-eyes", "isHidden": false, "shortEffect": null },
+      { "name": "tinted-lens", "isHidden": false, "shortEffect": null },
+      { "name": "run-away", "isHidden": true, "shortEffect": null }
+    ],
+    "49": [
+      { "name": "shield-dust", "isHidden": false, "shortEffect": null },
+      { "name": "tinted-lens", "isHidden": false, "shortEffect": null },
+      { "name": "wonder-skin", "isHidden": true, "shortEffect": null }
+    ],
+    "50": [
+      { "name": "sand-veil", "isHidden": false, "shortEffect": null },
+      { "name": "arena-trap", "isHidden": false, "shortEffect": null },
+      { "name": "sand-force", "isHidden": true, "shortEffect": null }
+    ],
+    "51": [
+      { "name": "sand-veil", "isHidden": false, "shortEffect": null },
+      { "name": "arena-trap", "isHidden": false, "shortEffect": null },
+      { "name": "sand-force", "isHidden": true, "shortEffect": null }
+    ],
+    "52": [
+      { "name": "pickup", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "53": [
+      { "name": "limber", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "54": [
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "cloud-nine", "isHidden": false, "shortEffect": null },
+      { "name": "swift-swim", "isHidden": true, "shortEffect": null }
+    ],
+    "55": [
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "cloud-nine", "isHidden": false, "shortEffect": null },
+      { "name": "swift-swim", "isHidden": true, "shortEffect": null }
+    ],
+    "56": [
+      { "name": "vital-spirit", "isHidden": false, "shortEffect": null },
+      { "name": "anger-point", "isHidden": false, "shortEffect": null },
+      { "name": "defiant", "isHidden": true, "shortEffect": null }
+    ],
+    "57": [
+      { "name": "vital-spirit", "isHidden": false, "shortEffect": null },
+      { "name": "anger-point", "isHidden": false, "shortEffect": null },
+      { "name": "defiant", "isHidden": true, "shortEffect": null }
+    ],
+    "58": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "justified", "isHidden": true, "shortEffect": null }
+    ],
+    "59": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "justified", "isHidden": true, "shortEffect": null }
+    ],
+    "60": [
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "swift-swim", "isHidden": true, "shortEffect": null }
+    ],
+    "61": [
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "swift-swim", "isHidden": true, "shortEffect": null }
+    ],
+    "62": [
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "swift-swim", "isHidden": true, "shortEffect": null }
+    ],
+    "63": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "magic-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "64": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "magic-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "65": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "magic-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "66": [
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "no-guard", "isHidden": false, "shortEffect": null },
+      { "name": "steadfast", "isHidden": true, "shortEffect": null }
+    ],
+    "67": [
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "no-guard", "isHidden": false, "shortEffect": null },
+      { "name": "steadfast", "isHidden": true, "shortEffect": null }
+    ],
+    "68": [
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "no-guard", "isHidden": false, "shortEffect": null },
+      { "name": "steadfast", "isHidden": true, "shortEffect": null }
+    ],
+    "69": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "gluttony", "isHidden": true, "shortEffect": null }
+    ],
+    "70": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "gluttony", "isHidden": true, "shortEffect": null }
+    ],
+    "71": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "gluttony", "isHidden": true, "shortEffect": null }
+    ],
+    "72": [
+      { "name": "clear-body", "isHidden": false, "shortEffect": null },
+      { "name": "liquid-ooze", "isHidden": false, "shortEffect": null },
+      { "name": "rain-dish", "isHidden": true, "shortEffect": null }
+    ],
+    "73": [
+      { "name": "clear-body", "isHidden": false, "shortEffect": null },
+      { "name": "liquid-ooze", "isHidden": false, "shortEffect": null },
+      { "name": "rain-dish", "isHidden": true, "shortEffect": null }
+    ],
+    "74": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "75": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "76": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "77": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "flame-body", "isHidden": true, "shortEffect": null }
+    ],
+    "78": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "flame-body", "isHidden": true, "shortEffect": null }
+    ],
+    "79": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "own-tempo", "isHidden": false, "shortEffect": null },
+      { "name": "regenerator", "isHidden": true, "shortEffect": null }
+    ],
+    "80": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "own-tempo", "isHidden": false, "shortEffect": null },
+      { "name": "regenerator", "isHidden": true, "shortEffect": null }
+    ],
+    "81": [
+      { "name": "magnet-pull", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "analytic", "isHidden": true, "shortEffect": null }
+    ],
+    "82": [
+      { "name": "magnet-pull", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "analytic", "isHidden": true, "shortEffect": null }
+    ],
+    "83": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "defiant", "isHidden": true, "shortEffect": null }
+    ],
+    "84": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "tangled-feet", "isHidden": true, "shortEffect": null }
+    ],
+    "85": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "tangled-feet", "isHidden": true, "shortEffect": null }
+    ],
+    "86": [
+      { "name": "thick-fat", "isHidden": false, "shortEffect": null },
+      { "name": "hydration", "isHidden": false, "shortEffect": null },
+      { "name": "ice-body", "isHidden": true, "shortEffect": null }
+    ],
+    "87": [
+      { "name": "thick-fat", "isHidden": false, "shortEffect": null },
+      { "name": "hydration", "isHidden": false, "shortEffect": null },
+      { "name": "ice-body", "isHidden": true, "shortEffect": null }
+    ],
+    "88": [
+      { "name": "stench", "isHidden": false, "shortEffect": null },
+      { "name": "sticky-hold", "isHidden": false, "shortEffect": null },
+      { "name": "poison-touch", "isHidden": true, "shortEffect": null }
+    ],
+    "89": [
+      { "name": "stench", "isHidden": false, "shortEffect": null },
+      { "name": "sticky-hold", "isHidden": false, "shortEffect": null },
+      { "name": "poison-touch", "isHidden": true, "shortEffect": null }
+    ],
+    "90": [
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "skill-link", "isHidden": false, "shortEffect": null },
+      { "name": "overcoat", "isHidden": true, "shortEffect": null }
+    ],
+    "91": [
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "skill-link", "isHidden": false, "shortEffect": null },
+      { "name": "overcoat", "isHidden": true, "shortEffect": null }
+    ],
+    "92": [{ "name": "levitate", "isHidden": false, "shortEffect": null }],
+    "93": [{ "name": "levitate", "isHidden": false, "shortEffect": null }],
+    "94": [{ "name": "cursed-body", "isHidden": false, "shortEffect": null }],
+    "95": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "96": [
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "forewarn", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "97": [
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "forewarn", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "98": [
+      { "name": "hyper-cutter", "isHidden": false, "shortEffect": null },
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "99": [
+      { "name": "hyper-cutter", "isHidden": false, "shortEffect": null },
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "100": [
+      { "name": "soundproof", "isHidden": false, "shortEffect": null },
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "aftermath", "isHidden": true, "shortEffect": null }
+    ],
+    "101": [
+      { "name": "soundproof", "isHidden": false, "shortEffect": null },
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "aftermath", "isHidden": true, "shortEffect": null }
+    ],
+    "102": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "harvest", "isHidden": true, "shortEffect": null }
+    ],
+    "103": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "harvest", "isHidden": true, "shortEffect": null }
+    ],
+    "104": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": false, "shortEffect": null },
+      { "name": "battle-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "105": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": false, "shortEffect": null },
+      { "name": "battle-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "106": [
+      { "name": "limber", "isHidden": false, "shortEffect": null },
+      { "name": "reckless", "isHidden": false, "shortEffect": null },
+      { "name": "unburden", "isHidden": true, "shortEffect": null }
+    ],
+    "107": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "iron-fist", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "108": [
+      { "name": "own-tempo", "isHidden": false, "shortEffect": null },
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "cloud-nine", "isHidden": true, "shortEffect": null }
+    ],
+    "109": [
+      { "name": "levitate", "isHidden": false, "shortEffect": null },
+      { "name": "neutralizing-gas", "isHidden": false, "shortEffect": null },
+      { "name": "stench", "isHidden": true, "shortEffect": null }
+    ],
+    "110": [
+      { "name": "levitate", "isHidden": false, "shortEffect": null },
+      { "name": "neutralizing-gas", "isHidden": false, "shortEffect": null },
+      { "name": "stench", "isHidden": true, "shortEffect": null }
+    ],
+    "111": [
+      { "name": "lightning-rod", "isHidden": false, "shortEffect": null },
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "reckless", "isHidden": true, "shortEffect": null }
+    ],
+    "112": [
+      { "name": "lightning-rod", "isHidden": false, "shortEffect": null },
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "reckless", "isHidden": true, "shortEffect": null }
+    ],
+    "113": [
+      { "name": "natural-cure", "isHidden": false, "shortEffect": null },
+      { "name": "serene-grace", "isHidden": false, "shortEffect": null },
+      { "name": "healer", "isHidden": true, "shortEffect": null }
+    ],
+    "114": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": false, "shortEffect": null },
+      { "name": "regenerator", "isHidden": true, "shortEffect": null }
+    ],
+    "115": [
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "scrappy", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "116": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": true, "shortEffect": null }
+    ],
+    "117": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": true, "shortEffect": null }
+    ],
+    "118": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "water-veil", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": true, "shortEffect": null }
+    ],
+    "119": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "water-veil", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": true, "shortEffect": null }
+    ],
+    "120": [
+      { "name": "illuminate", "isHidden": false, "shortEffect": null },
+      { "name": "natural-cure", "isHidden": false, "shortEffect": null },
+      { "name": "analytic", "isHidden": true, "shortEffect": null }
+    ],
+    "121": [
+      { "name": "illuminate", "isHidden": false, "shortEffect": null },
+      { "name": "natural-cure", "isHidden": false, "shortEffect": null },
+      { "name": "analytic", "isHidden": true, "shortEffect": null }
+    ],
+    "122": [
+      { "name": "soundproof", "isHidden": false, "shortEffect": null },
+      { "name": "filter", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": true, "shortEffect": null }
+    ],
+    "123": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": false, "shortEffect": null },
+      { "name": "steadfast", "isHidden": true, "shortEffect": null }
+    ],
+    "124": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "forewarn", "isHidden": false, "shortEffect": null },
+      { "name": "dry-skin", "isHidden": true, "shortEffect": null }
+    ],
+    "125": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "vital-spirit", "isHidden": true, "shortEffect": null }
+    ],
+    "126": [
+      { "name": "flame-body", "isHidden": false, "shortEffect": null },
+      { "name": "vital-spirit", "isHidden": true, "shortEffect": null }
+    ],
+    "127": [
+      { "name": "hyper-cutter", "isHidden": false, "shortEffect": null },
+      { "name": "mold-breaker", "isHidden": false, "shortEffect": null },
+      { "name": "moxie", "isHidden": true, "shortEffect": null }
+    ],
+    "128": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "anger-point", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "129": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "rattled", "isHidden": true, "shortEffect": null }
+    ],
+    "130": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "moxie", "isHidden": true, "shortEffect": null }
+    ],
+    "131": [
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "hydration", "isHidden": true, "shortEffect": null }
+    ],
+    "132": [
+      { "name": "limber", "isHidden": false, "shortEffect": null },
+      { "name": "imposter", "isHidden": true, "shortEffect": null }
+    ],
+    "133": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "adaptability", "isHidden": false, "shortEffect": null },
+      { "name": "anticipation", "isHidden": true, "shortEffect": null }
+    ],
+    "134": [
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "hydration", "isHidden": true, "shortEffect": null }
+    ],
+    "135": [
+      { "name": "volt-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "quick-feet", "isHidden": true, "shortEffect": null }
+    ],
+    "136": [
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "guts", "isHidden": true, "shortEffect": null }
+    ],
+    "137": [
+      { "name": "trace", "isHidden": false, "shortEffect": null },
+      { "name": "download", "isHidden": false, "shortEffect": null },
+      { "name": "analytic", "isHidden": true, "shortEffect": null }
+    ],
+    "138": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "139": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "shell-armor", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "140": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "battle-armor", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "141": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "battle-armor", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "142": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "143": [
+      { "name": "immunity", "isHidden": false, "shortEffect": null },
+      { "name": "thick-fat", "isHidden": false, "shortEffect": null },
+      { "name": "gluttony", "isHidden": true, "shortEffect": null }
+    ],
+    "144": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "snow-cloak", "isHidden": true, "shortEffect": null }
+    ],
+    "145": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "static", "isHidden": true, "shortEffect": null }
+    ],
+    "146": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "flame-body", "isHidden": true, "shortEffect": null }
+    ],
+    "147": [
+      { "name": "shed-skin", "isHidden": false, "shortEffect": null },
+      { "name": "marvel-scale", "isHidden": true, "shortEffect": null }
+    ],
+    "148": [
+      { "name": "shed-skin", "isHidden": false, "shortEffect": null },
+      { "name": "marvel-scale", "isHidden": true, "shortEffect": null }
+    ],
+    "149": [
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "multiscale", "isHidden": true, "shortEffect": null }
+    ],
+    "150": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "151": [{ "name": "synchronize", "isHidden": false, "shortEffect": null }],
+    "152": [
+      { "name": "overgrow", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "153": [
+      { "name": "overgrow", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "154": [
+      { "name": "overgrow", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "155": [
+      { "name": "blaze", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": true, "shortEffect": null }
+    ],
+    "156": [
+      { "name": "blaze", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": true, "shortEffect": null }
+    ],
+    "157": [
+      { "name": "blaze", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": true, "shortEffect": null }
+    ],
+    "158": [
+      { "name": "torrent", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "159": [
+      { "name": "torrent", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "160": [
+      { "name": "torrent", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "161": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "frisk", "isHidden": true, "shortEffect": null }
+    ],
+    "162": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "frisk", "isHidden": true, "shortEffect": null }
+    ],
+    "163": [
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "tinted-lens", "isHidden": true, "shortEffect": null }
+    ],
+    "164": [
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "tinted-lens", "isHidden": true, "shortEffect": null }
+    ],
+    "165": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "rattled", "isHidden": true, "shortEffect": null }
+    ],
+    "166": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "iron-fist", "isHidden": true, "shortEffect": null }
+    ],
+    "167": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": true, "shortEffect": null }
+    ],
+    "168": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": true, "shortEffect": null }
+    ],
+    "169": [
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "infiltrator", "isHidden": true, "shortEffect": null }
+    ],
+    "170": [
+      { "name": "volt-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "illuminate", "isHidden": false, "shortEffect": null },
+      { "name": "water-absorb", "isHidden": true, "shortEffect": null }
+    ],
+    "171": [
+      { "name": "volt-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "illuminate", "isHidden": false, "shortEffect": null },
+      { "name": "water-absorb", "isHidden": true, "shortEffect": null }
+    ],
+    "172": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "lightning-rod", "isHidden": true, "shortEffect": null }
+    ],
+    "173": [
+      { "name": "cute-charm", "isHidden": false, "shortEffect": null },
+      { "name": "magic-guard", "isHidden": false, "shortEffect": null },
+      { "name": "friend-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "174": [
+      { "name": "cute-charm", "isHidden": false, "shortEffect": null },
+      { "name": "competitive", "isHidden": false, "shortEffect": null },
+      { "name": "friend-guard", "isHidden": true, "shortEffect": null }
+    ],
+    "175": [
+      { "name": "hustle", "isHidden": false, "shortEffect": null },
+      { "name": "serene-grace", "isHidden": false, "shortEffect": null },
+      { "name": "super-luck", "isHidden": true, "shortEffect": null }
+    ],
+    "176": [
+      { "name": "hustle", "isHidden": false, "shortEffect": null },
+      { "name": "serene-grace", "isHidden": false, "shortEffect": null },
+      { "name": "super-luck", "isHidden": true, "shortEffect": null }
+    ],
+    "177": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "magic-bounce", "isHidden": true, "shortEffect": null }
+    ],
+    "178": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "magic-bounce", "isHidden": true, "shortEffect": null }
+    ],
+    "179": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "plus", "isHidden": true, "shortEffect": null }
+    ],
+    "180": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "plus", "isHidden": true, "shortEffect": null }
+    ],
+    "181": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "plus", "isHidden": true, "shortEffect": null }
+    ],
+    "182": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "healer", "isHidden": true, "shortEffect": null }
+    ],
+    "183": [
+      { "name": "thick-fat", "isHidden": false, "shortEffect": null },
+      { "name": "huge-power", "isHidden": false, "shortEffect": null },
+      { "name": "sap-sipper", "isHidden": true, "shortEffect": null }
+    ],
+    "184": [
+      { "name": "thick-fat", "isHidden": false, "shortEffect": null },
+      { "name": "huge-power", "isHidden": false, "shortEffect": null },
+      { "name": "sap-sipper", "isHidden": true, "shortEffect": null }
+    ],
+    "185": [
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "rattled", "isHidden": true, "shortEffect": null }
+    ],
+    "186": [
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "drizzle", "isHidden": true, "shortEffect": null }
+    ],
+    "187": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": false, "shortEffect": null },
+      { "name": "infiltrator", "isHidden": true, "shortEffect": null }
+    ],
+    "188": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": false, "shortEffect": null },
+      { "name": "infiltrator", "isHidden": true, "shortEffect": null }
+    ],
+    "189": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "leaf-guard", "isHidden": false, "shortEffect": null },
+      { "name": "infiltrator", "isHidden": true, "shortEffect": null }
+    ],
+    "190": [
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "pickup", "isHidden": false, "shortEffect": null },
+      { "name": "skill-link", "isHidden": true, "shortEffect": null }
+    ],
+    "191": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "solar-power", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": true, "shortEffect": null }
+    ],
+    "192": [
+      { "name": "chlorophyll", "isHidden": false, "shortEffect": null },
+      { "name": "solar-power", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": true, "shortEffect": null }
+    ],
+    "193": [
+      { "name": "speed-boost", "isHidden": false, "shortEffect": null },
+      { "name": "compound-eyes", "isHidden": false, "shortEffect": null },
+      { "name": "frisk", "isHidden": true, "shortEffect": null }
+    ],
+    "194": [
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "unaware", "isHidden": true, "shortEffect": null }
+    ],
+    "195": [
+      { "name": "damp", "isHidden": false, "shortEffect": null },
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "unaware", "isHidden": true, "shortEffect": null }
+    ],
+    "196": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "magic-bounce", "isHidden": true, "shortEffect": null }
+    ],
+    "197": [
+      { "name": "synchronize", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "198": [
+      { "name": "insomnia", "isHidden": false, "shortEffect": null },
+      { "name": "super-luck", "isHidden": false, "shortEffect": null },
+      { "name": "prankster", "isHidden": true, "shortEffect": null }
+    ],
+    "199": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "own-tempo", "isHidden": false, "shortEffect": null },
+      { "name": "regenerator", "isHidden": true, "shortEffect": null }
+    ],
+    "200": [{ "name": "levitate", "isHidden": false, "shortEffect": null }],
+    "201": [{ "name": "levitate", "isHidden": false, "shortEffect": null }],
+    "202": [
+      { "name": "shadow-tag", "isHidden": false, "shortEffect": null },
+      { "name": "telepathy", "isHidden": true, "shortEffect": null }
+    ],
+    "203": [
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "sap-sipper", "isHidden": true, "shortEffect": null }
+    ],
+    "204": [
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "overcoat", "isHidden": true, "shortEffect": null }
+    ],
+    "205": [
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "overcoat", "isHidden": true, "shortEffect": null }
+    ],
+    "206": [
+      { "name": "serene-grace", "isHidden": false, "shortEffect": null },
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "rattled", "isHidden": true, "shortEffect": null }
+    ],
+    "207": [
+      { "name": "hyper-cutter", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": false, "shortEffect": null },
+      { "name": "immunity", "isHidden": true, "shortEffect": null }
+    ],
+    "208": [
+      { "name": "rock-head", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "sheer-force", "isHidden": true, "shortEffect": null }
+    ],
+    "209": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "run-away", "isHidden": false, "shortEffect": null },
+      { "name": "rattled", "isHidden": true, "shortEffect": null }
+    ],
+    "210": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "quick-feet", "isHidden": false, "shortEffect": null },
+      { "name": "rattled", "isHidden": true, "shortEffect": null }
+    ],
+    "211": [
+      { "name": "poison-point", "isHidden": false, "shortEffect": null },
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "intimidate", "isHidden": true, "shortEffect": null }
+    ],
+    "212": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": false, "shortEffect": null },
+      { "name": "light-metal", "isHidden": true, "shortEffect": null }
+    ],
+    "213": [
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "gluttony", "isHidden": false, "shortEffect": null },
+      { "name": "contrary", "isHidden": true, "shortEffect": null }
+    ],
+    "214": [
+      { "name": "swarm", "isHidden": false, "shortEffect": null },
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "moxie", "isHidden": true, "shortEffect": null }
+    ],
+    "215": [
+      { "name": "inner-focus", "isHidden": false, "shortEffect": null },
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "pickpocket", "isHidden": true, "shortEffect": null }
+    ],
+    "216": [
+      { "name": "pickup", "isHidden": false, "shortEffect": null },
+      { "name": "quick-feet", "isHidden": false, "shortEffect": null },
+      { "name": "honey-gather", "isHidden": true, "shortEffect": null }
+    ],
+    "217": [
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "quick-feet", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "218": [
+      { "name": "magma-armor", "isHidden": false, "shortEffect": null },
+      { "name": "flame-body", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "219": [
+      { "name": "magma-armor", "isHidden": false, "shortEffect": null },
+      { "name": "flame-body", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "220": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "snow-cloak", "isHidden": false, "shortEffect": null },
+      { "name": "thick-fat", "isHidden": true, "shortEffect": null }
+    ],
+    "221": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "snow-cloak", "isHidden": false, "shortEffect": null },
+      { "name": "thick-fat", "isHidden": true, "shortEffect": null }
+    ],
+    "222": [
+      { "name": "hustle", "isHidden": false, "shortEffect": null },
+      { "name": "natural-cure", "isHidden": false, "shortEffect": null },
+      { "name": "regenerator", "isHidden": true, "shortEffect": null }
+    ],
+    "223": [
+      { "name": "hustle", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": false, "shortEffect": null },
+      { "name": "moody", "isHidden": true, "shortEffect": null }
+    ],
+    "224": [
+      { "name": "suction-cups", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": false, "shortEffect": null },
+      { "name": "moody", "isHidden": true, "shortEffect": null }
+    ],
+    "225": [
+      { "name": "vital-spirit", "isHidden": false, "shortEffect": null },
+      { "name": "hustle", "isHidden": false, "shortEffect": null },
+      { "name": "insomnia", "isHidden": true, "shortEffect": null }
+    ],
+    "226": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "water-absorb", "isHidden": false, "shortEffect": null },
+      { "name": "water-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "227": [
+      { "name": "keen-eye", "isHidden": false, "shortEffect": null },
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "weak-armor", "isHidden": true, "shortEffect": null }
+    ],
+    "228": [
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "229": [
+      { "name": "early-bird", "isHidden": false, "shortEffect": null },
+      { "name": "flash-fire", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "230": [
+      { "name": "swift-swim", "isHidden": false, "shortEffect": null },
+      { "name": "sniper", "isHidden": false, "shortEffect": null },
+      { "name": "damp", "isHidden": true, "shortEffect": null }
+    ],
+    "231": [
+      { "name": "pickup", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "232": [
+      { "name": "sturdy", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "233": [
+      { "name": "trace", "isHidden": false, "shortEffect": null },
+      { "name": "download", "isHidden": false, "shortEffect": null },
+      { "name": "analytic", "isHidden": true, "shortEffect": null }
+    ],
+    "234": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "frisk", "isHidden": false, "shortEffect": null },
+      { "name": "sap-sipper", "isHidden": true, "shortEffect": null }
+    ],
+    "235": [
+      { "name": "own-tempo", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": false, "shortEffect": null },
+      { "name": "moody", "isHidden": true, "shortEffect": null }
+    ],
+    "236": [
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "steadfast", "isHidden": false, "shortEffect": null },
+      { "name": "vital-spirit", "isHidden": true, "shortEffect": null }
+    ],
+    "237": [
+      { "name": "intimidate", "isHidden": false, "shortEffect": null },
+      { "name": "technician", "isHidden": false, "shortEffect": null },
+      { "name": "steadfast", "isHidden": true, "shortEffect": null }
+    ],
+    "238": [
+      { "name": "oblivious", "isHidden": false, "shortEffect": null },
+      { "name": "forewarn", "isHidden": false, "shortEffect": null },
+      { "name": "hydration", "isHidden": true, "shortEffect": null }
+    ],
+    "239": [
+      { "name": "static", "isHidden": false, "shortEffect": null },
+      { "name": "vital-spirit", "isHidden": true, "shortEffect": null }
+    ],
+    "240": [
+      { "name": "flame-body", "isHidden": false, "shortEffect": null },
+      { "name": "vital-spirit", "isHidden": true, "shortEffect": null }
+    ],
+    "241": [
+      { "name": "thick-fat", "isHidden": false, "shortEffect": null },
+      { "name": "scrappy", "isHidden": false, "shortEffect": null },
+      { "name": "sap-sipper", "isHidden": true, "shortEffect": null }
+    ],
+    "242": [
+      { "name": "natural-cure", "isHidden": false, "shortEffect": null },
+      { "name": "serene-grace", "isHidden": false, "shortEffect": null },
+      { "name": "healer", "isHidden": true, "shortEffect": null }
+    ],
+    "243": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "244": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "245": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "inner-focus", "isHidden": true, "shortEffect": null }
+    ],
+    "246": [
+      { "name": "guts", "isHidden": false, "shortEffect": null },
+      { "name": "sand-veil", "isHidden": true, "shortEffect": null }
+    ],
+    "247": [{ "name": "shed-skin", "isHidden": false, "shortEffect": null }],
+    "248": [
+      { "name": "sand-stream", "isHidden": false, "shortEffect": null },
+      { "name": "unnerve", "isHidden": true, "shortEffect": null }
+    ],
+    "249": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "multiscale", "isHidden": true, "shortEffect": null }
+    ],
+    "250": [
+      { "name": "pressure", "isHidden": false, "shortEffect": null },
+      { "name": "regenerator", "isHidden": true, "shortEffect": null }
+    ],
+    "251": [{ "name": "natural-cure", "isHidden": false, "shortEffect": null }]
+  }
+}

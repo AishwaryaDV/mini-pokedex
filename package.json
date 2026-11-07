@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "mock": "json-graphql-server db.js --port 4000",
+    "snapshot": "node scripts/build-fallback.mjs",
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write .",

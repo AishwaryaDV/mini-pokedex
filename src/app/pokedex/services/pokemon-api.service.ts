@@ -1,7 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable, map } from 'rxjs';
+import { Observable, catchError, map, shareReplay, throwError } from 'rxjs';
 import { API_RETRY_COUNT, API_RETRY_DELAY_MS, POKEAPI_GRAPHQL_URL } from '../../common/constants';
 import { GraphqlClientService } from '../../core/graphql/graphql-client.service';
+import { LoggerService } from '../../core/logger.service';
 import { Pokemon, PokemonAbility, PokemonStats } from '../models/pokemon.model';
 
 // --- Raw PokéAPI GraphQL response shapes (flattened by the mappers below) ---
@@ -73,6 +75,14 @@ const GET_ABILITIES = `
   }
 `;
 
+/** Committed offline snapshot (see scripts/build-fallback.mjs), served from public/. */
+interface PokemonSnapshot {
+  pokemon: Pokemon[];
+  abilitiesById: Record<string, PokemonAbility[]>;
+}
+
+const FALLBACK_URL = '/pokemon-fallback.json';
+
 /** Narrow an unknown value to a plain object for safe property access. */
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
@@ -81,15 +91,19 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 /**
  * Reads Pokémon data from the public PokéAPI GraphQL endpoint and maps the
  * deeply-nested response into the flat {@link Pokemon} model the UI consumes.
- * All reads retry with a delay, as PokéAPI occasionally returns transient 5xx.
+ * Reads retry with a delay; if the endpoint is unavailable they fall back to a
+ * committed offline snapshot so the Pokédex keeps working.
  */
 @Injectable({ providedIn: 'root' })
 export class PokemonApiService {
   private readonly graphql = inject(GraphqlClientService);
+  private readonly http = inject(HttpClient);
+  private readonly logger = inject(LoggerService);
   private readonly retryOptions = {
     retryCount: API_RETRY_COUNT,
     retryDelayMs: API_RETRY_DELAY_MS,
   };
+  private snapshot$?: Observable<PokemonSnapshot>;
 
   /**
    * Fetch a page of Pokémon with their types, base stats and sprite.
@@ -104,7 +118,15 @@ export class PokemonApiService {
         { limit, offset },
         this.retryOptions,
       )
-      .pipe(map((response) => response.pokemon_v2_pokemon.map((raw) => this.toPokemon(raw))));
+      .pipe(
+        map((response) => response.pokemon_v2_pokemon.map((raw) => this.toPokemon(raw))),
+        catchError((error: Error) => {
+          this.logger.warn('PokéAPI getPokemon failed; serving offline snapshot', error);
+          return this.loadSnapshot().pipe(
+            map((snapshot) => snapshot.pokemon.slice(offset, offset + limit)),
+          );
+        }),
+      );
   }
 
   /**
@@ -121,7 +143,26 @@ export class PokemonApiService {
       )
       .pipe(
         map((response) => response.pokemon_v2_pokemonability.map((raw) => this.toAbility(raw))),
+        catchError((error: Error) => {
+          this.logger.warn('PokéAPI getAbilities failed; serving offline snapshot', error);
+          return this.loadSnapshot().pipe(
+            map((snapshot) => snapshot.abilitiesById[String(pokemonId)] ?? []),
+          );
+        }),
       );
+  }
+
+  /** Lazily fetch and cache the offline snapshot; map failures to a friendly error. */
+  private loadSnapshot(): Observable<PokemonSnapshot> {
+    if (!this.snapshot$) {
+      this.snapshot$ = this.http.get<PokemonSnapshot>(FALLBACK_URL).pipe(
+        catchError(() =>
+          throwError(() => new Error('Network error. Check your connection and try again.')),
+        ),
+        shareReplay(1),
+      );
+    }
+    return this.snapshot$;
   }
 
   private toPokemon(raw: RawPokemon): Pokemon {
