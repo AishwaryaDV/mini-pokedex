@@ -4,6 +4,15 @@ A single-page Angular 21 application to browse Pokémon and build teams, using G
 Built with standalone components, Angular Signals, a hand-rolled RxJS store, and strict
 handling of loading / empty / error / success states on every async view.
 
+> **Note for reviewers.** PokéAPI's public GraphQL beta endpoint
+> (`https://beta.pokeapi.co/graphql/v1beta`) has been unstable — returning timeouts and,
+> currently, `401`s (a gateway issue on PokéAPI's side, confirmed from multiple networks;
+> their REST API is unaffected). GraphQL is the app's live primary path; when it's
+> unavailable, Pokémon reads **fall back to a committed offline snapshot** so the Pokédex
+> still works (so if you see Pokémon data, it may be served from that snapshot). When the
+> endpoint recovers, the app uses live GraphQL again. Teams run on the local mock and are
+> unaffected. A true network cut still surfaces the error + Retry state.
+
 ## Tech stack
 
 - **Angular 21** (standalone, `OnPush`, signals-first, `inject()`)
