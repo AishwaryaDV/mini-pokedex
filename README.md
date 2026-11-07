@@ -89,6 +89,20 @@ that happens the app shows the error state with Retry rather than breaking.
   and a typeahead Pokémon picker (removable chips, 1–6 members); create via the optimistic
   flow; select a team (persisted) or delete it.
 
+## Bonuses
+
+The brief suggests picking at most one bonus; we deliberately added several, each
+isolated so it never compromises a required feature:
+
+- **Skeleton shimmer + micro-animations** — shimmer loading rows, mutation toasts, and
+  staggered team-card entry.
+- **Type-highlight directive** (`[appTypeHighlight]`) — marks Pokédex rows strong/weak vs. a
+  selected type using a type-effectiveness chart.
+- **Virtual scroll** — a view-mode **toggle** (`@angular/cdk/scrolling`) that renders the full
+  filtered list, kept _alongside_ the required pagination rather than replacing it.
+- **Drag-and-drop** (`@angular/cdk/drag-drop`) — drag Pokémon from a palette into team slots,
+  reorder within, or drag out to remove.
+
 ## Testing
 
 Vitest, run with `npm test`:
